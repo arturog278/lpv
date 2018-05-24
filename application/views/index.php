@@ -28,11 +28,17 @@
 					<a href="http://localhost/lpv/lpv/FISC/views/Index.php">
 						<div id="contenidoado2" class="col-sm-3">
 							<img id="contenidoado2img" src="../resources/bd.png">
+							<div id="contenidoado2txt">
+								Administración de Base de Datos
+							</div>
 						</div>
 					</a>
 					<a href="http://localhost/lpv/lpv/FISC/views/Index.php">
 						<div id="contenidoado3" class="col-sm-3">
 							<img id="contenidoado3img" src="../resources/reportes.png">
+							<div id="contenidoado3txt">
+								Reportes
+							</div>
 						</div>
 					</a>
 				</div>
