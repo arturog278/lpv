@@ -14,13 +14,25 @@
 				</a>
 			</div>
 			<div id="contenido">
-				<div class="row">
-					<div class="col-sm-*"></div>
-					<div class="col-sm-*"></div>
-					<div class="col-sm-*"></div>
-				</div>
 				<img id="contenidofilinkimg" src="./resources/cabecera.png">
-				<img id="contenidobanpreimg" src="./resources/banprestamo.png">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<a href="http://localhost/FISC/Index.php">
+						<div id="contenidoado1" class="col-sm-3">
+							<img id="contenidoado1img" src="./resources/solicitud.png">
+						</div>
+					</a>
+					<a href="http://localhost/FISC/Index.php">
+						<div id="contenidoado2" class="col-sm-3">
+							<img id="contenidoado2img" src="./resources/bd.png">
+						</div>
+					</a>
+					<a href="http://localhost/FISC/Index.php">
+						<div id="contenidoado3" class="col-sm-3">
+							<img id="contenidoado3img" src="./resources/reportes.png">
+						</div>
+					</a>
+				</div>
 			</div>
 			<div id="footer">
 			</div>
