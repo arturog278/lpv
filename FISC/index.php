@@ -10,7 +10,7 @@
 		<div class="container">
 			<div id="banner">
 				<a href="http://localhost/FISC/Index.php">
-					<img id="banner-img" src="./resources/bannerFI.png">
+					<img id="bannerimg" src="./resources/bannerFI.png">
 				</a>
 			</div>
 			<div id="contenido">

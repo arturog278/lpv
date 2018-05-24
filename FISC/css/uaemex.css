@@ -1,4 +1,4 @@
-html, body, .container, #contenedor {
+html, body, .container, #contenido {
 	height: 100%;
 	margin: 0px;
 	border: 0px;
@@ -13,7 +13,7 @@ html, body, .container, #contenedor {
 	position: fixed;
 	bottom: 0px;
 }
-#banner-img {
+#bannerimg {
 	width: 100%;
 }
 #contenidofilinkimg {
@@ -21,8 +21,22 @@ html, body, .container, #contenedor {
 	left: 25px;
 	top: 3px;
 }
-#contenidobanpreimg {
-	position: absolute;
-	margin-left: 250px;
-	margin-top: 60px;
+.row {
+	height: 100%;
+	padding-top: 0px;
+	padding-left:120px; 
+}
+#contenidoado1 {
+	background-color: #fff882;
+}
+#contenidoado2 {
+	background-color: #ffab77;
+}
+#contenidoado3 {
+	background-color: #8cb4ff;
+}
+#contenidoado1img, #contenidoado2img, #contenidoado3img {
+	position: relative;
+	width: 250px;
+	padding-top: 15px;
 }
