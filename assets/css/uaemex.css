@@ -39,7 +39,8 @@ html, body, .container, #contenido {
 	position: relative;
 	width: 250px;
 	padding-top: 15px;
-	padding-right: 15px;
+	padding-left: 10px;
+	padding-right: 0px;
 }
 #contenidoado1, #contenidoado2, #contenidoado3 {
 	padding: 0px;
