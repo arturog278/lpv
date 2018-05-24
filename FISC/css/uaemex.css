@@ -41,3 +41,18 @@ html, body, .container, #contenido {
 	padding-top: 15px;
 	padding-right: 15px;
 }
+#contenidoado1, #contenidoado2, #contenidoado3 {
+	padding: 0px;
+}
+#contenidoado1 div, #contenidoado2 div, #contenidoado3 div {
+	text-align: center;
+	color: white;
+	font-family: times;
+	font-size: 25px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#contenidoado1txt {
+	background-color: #c6bd1f;
+}
