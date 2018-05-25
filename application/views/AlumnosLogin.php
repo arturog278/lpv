@@ -1,4 +1,9 @@
 <div id="contenido">
+  <div id="contenidoreg">
+    <a href="http://localhost:8080/lpv/AlumnoMenu">
+      <button type="button" class="btn btn-warning">Regresar</button>
+    </a>
+  </div>
     <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
     <img id="contenidocabimg" src="<?php echo asset_url('images/bansalas.png'); ?>">
   <link href="css/loginAlumno.css" rel="stylesheet" id="bootstrap-css">

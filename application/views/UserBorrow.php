@@ -2,7 +2,7 @@
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <img id="contenidocabimg" src="<?php echo asset_url('images/banprestamo.png'); ?>">
   <div id="contenidoreg">
-    <a href="http://localhost:8080/lpv/AdminMenu">
+    <a href="http://localhost:8080/lpv/AlumnoMenu">
       <button type="button" class="btn btn-warning">Regresar</button>
     </a>
   </div>
