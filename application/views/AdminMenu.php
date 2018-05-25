@@ -2,9 +2,9 @@
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
       <div id="contenidocerrarsesion">
         <a href="http://localhost:8080/lpv/AdminLogin">
-    <button type="button" class="btn btn-danger">Cerrar Sesión</button>
-  </a>
-  </div>
+          <button type="button" class="btn btn-danger">Cerrar Sesión</button>
+        </a>
+      </div>
   <div class="row">
     <div class="col-sm-1"></div>
     <a href="http://localhost:8080/lpv/AdminSoli">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </a>
-    <a href="http://localhost:8080/lpv">
+    <a href="http://localhost:8080/lpv/AdminBD">
       <div id="contenidoado2" class="col-sm-3">
         <img id="contenidoado2img" src="<?php echo asset_url('images/bd.png'); ?>">
         <br/><br/>
@@ -26,7 +26,7 @@
         </div>
       </div>
     </a>
-    <a href="http://localhost:8080/lpv">
+    <a href="http://localhost:8080/lpv/AdminReport">
       <div id="contenidoado3" class="col-sm-3">
         <img id="contenidoado3img" src="<?php echo asset_url('images/reportes.png'); ?>">
         <br/><br/>

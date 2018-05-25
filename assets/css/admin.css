@@ -77,3 +77,8 @@ html, body, .container, #contenido, #banner, #footer {
 	left: 25%;
 	top: 4px;
 }
+#contenidoreg {
+	position: absolute;
+	right: 10%;
+	top: 25%;
+}
