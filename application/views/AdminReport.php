@@ -1,8 +1,10 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <img id="contenidocabimg" src="<?php echo asset_url('images/banreporte.png'); ?>">
-  <div id="contenidoregresar">
-    <button type="button" class="btn btn-warning">Regresar</button>
+  <div id="contenidoreg">
+    <a href="http://localhost:8080/lpv/AdminMenu">
+      <button type="button" class="btn btn-warning">Regresar</button>
+    </a>
   </div>
   <br/><br/>
   <div id="contenidorep" class="row">
@@ -20,7 +22,11 @@
           <tbody>
             <tr><td><button type="button" class="btn btn-info">Reporte de material</button></td></tr>
             <tr><td><button type="button" class="btn btn-info">Reporte de profesores</button></td></tr>
-            <tr><td><button type="button" class="btn btn-info">Reporte de alumnos</button></td></tr>
+            <tr><td>
+              <a href="http://localhost:8080/lpv/">
+                <button type="button" class="btn btn-success">Reporte de alumnos</button>
+              </a>
+            </td></tr>
           </tbody>
         </table>
       </div>
