@@ -6,6 +6,7 @@
 		<link href="<?php echo asset_url('css/login.css'); ?>" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url('css/admin.css'); ?>" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url('css/adminSol.css'); ?>" rel="stylesheet" type="text/css">
+		<link href="<?php echo asset_url('css/adminbd.css'); ?>" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>
