@@ -5,7 +5,7 @@
   </div>
   <div class="row">
     <div class="col-sm-1"></div>
-    <a href="http://localhost/fefe">
+    <a href="http://localhost:8080/lpv/AdminSoli">
       <div id="contenidoado1" class="col-sm-3">
         <img id="contenidoado1img" src="<?php echo asset_url('images/solicitud.png'); ?>">
         <br/><br/>
@@ -15,7 +15,7 @@
         </div>
       </div>
     </a>
-    <a href="http://localhost:8080/AdminSoli">
+    <a href="http://localhost:8080/lpv">
       <div id="contenidoado2" class="col-sm-3">
         <img id="contenidoado2img" src="<?php echo asset_url('images/bd.png'); ?>">
         <br/><br/>
@@ -24,7 +24,7 @@
         </div>
       </div>
     </a>
-    <a href="http://localhost/xd">
+    <a href="http://localhost:8080/lpv">
       <div id="contenidoado3" class="col-sm-3">
         <img id="contenidoado3img" src="<?php echo asset_url('images/reportes.png'); ?>">
         <br/><br/>
