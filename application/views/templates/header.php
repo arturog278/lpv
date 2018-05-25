@@ -10,7 +10,7 @@
 	<body>
 		<div class="container">
 			<div id="banner">
-				<a href="http://localhost/lpv">
+				<a href="http://localhost:8080/lpv">
 					<img id="bannerimg" src="<?php echo asset_url('/images/bannerFI.png'); ?>" >
 				</a>
 			</div>
