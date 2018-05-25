@@ -1,7 +1,7 @@
 <div id="contenido">
     <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
     <div id="contenidoreg">
-      <a href="http://localhost:8080/lpv/AlumnosLogin">
+      <a href="http://localhost:8080/lpv/AlumnoMenu">
         <button type="button" class="btn btn-warning">Vista Usuario</button>
       </a>
     </div>
