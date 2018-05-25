@@ -1,16 +1,9 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
-<<<<<<< HEAD
-  <div id="contenidoregresar">
-    <a href="http://localhost:8080/lpv/AdminMenu">
-    <button type="button" class="btn btn-warning">Regresar</button>
-  </a>
-=======
   <div id="contenidoreg">
     <a href="http://localhost:8080/lpv/AdminMenu">
       <button type="button" class="btn btn-warning">Regresar</button>
     </a>
->>>>>>> 4587c9614aeef231957b9c9ce45fb5d7bdd1708c
   </div>
   <br/><br/>
   <div id="contenidotablahe" class="row">
