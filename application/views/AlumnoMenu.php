@@ -2,7 +2,7 @@
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <div class="row">
     <div class="col-sm-1"></div>
-    <a href="http://localhost:8080/lpv/AlumnosLogin">
+    <a href="http://localhost:8080/lpv/AlumnoLogin">
       <div id="contenidouso1" class="col-sm-5">
         <img id="contenidouso1img" src="<?php echo asset_url('images/sala.png'); ?>">
         <br/><br/>
