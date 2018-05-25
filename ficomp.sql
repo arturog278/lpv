@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2018 a las 05:03:07
+-- Tiempo de generación: 25-05-2018 a las 05:07:50
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.3
 
@@ -21,6 +21,32 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `ficomp`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `admin`
+--
+
+CREATE TABLE `admin` (
+  `usuario` varchar(20) DEFAULT NULL,
+  `pass` varchar(64) DEFAULT NULL,
+  `lvl` int(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alumnos`
+--
+
+CREATE TABLE `alumnos` (
+  `cuenta` int(11) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `appelidop` varchar(20) NOT NULL,
+  `apellidom` varchar(20) NOT NULL,
+  `divisionID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -140,6 +166,17 @@ CREATE TABLE `profesores` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `registroalumnos`
+--
+
+CREATE TABLE `registroalumnos` (
+  `alumnoID` int(11) DEFAULT NULL,
+  `hora` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `registros`
 --
 
@@ -168,6 +205,12 @@ CREATE TABLE `registrosactivos` (
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `alumnos`
+--
+ALTER TABLE `alumnos`
+  ADD PRIMARY KEY (`cuenta`);
 
 --
 -- Indices de la tabla `anotaciones`
@@ -230,6 +273,12 @@ ALTER TABLE `prestamos`
 --
 ALTER TABLE `profesores`
   ADD PRIMARY KEY (`profesorID`);
+
+--
+-- Indices de la tabla `registroalumnos`
+--
+ALTER TABLE `registroalumnos`
+  ADD KEY `alumnoID` (`alumnoID`);
 
 --
 -- Indices de la tabla `registros`
@@ -342,6 +391,12 @@ ALTER TABLE `materias`
 ALTER TABLE `prestamos`
   ADD CONSTRAINT `prestamos_ibfk_1` FOREIGN KEY (`registroID`) REFERENCES `registros` (`registroID`),
   ADD CONSTRAINT `prestamos_ibfk_2` FOREIGN KEY (`materialID`) REFERENCES `materiales` (`materialID`);
+
+--
+-- Filtros para la tabla `registroalumnos`
+--
+ALTER TABLE `registroalumnos`
+  ADD CONSTRAINT `registroalumnos_ibfk_1` FOREIGN KEY (`alumnoID`) REFERENCES `alumnos` (`cuenta`);
 
 --
 -- Filtros para la tabla `registros`
