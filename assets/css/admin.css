@@ -73,7 +73,7 @@ html, body, .container, #contenido, #banner, #footer {
 	background-color: #3c7ffc;
 }
 #contenidocabeceraimg {
-	position: absolute;
-	left: 40%;
-	top: 5px;
+	position: relative;
+	left: 25px;
+	top: 3px;
 }
