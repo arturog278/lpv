@@ -1,5 +1,6 @@
 html, body, .container, #contenido, #banner, #footer {
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
@@ -76,4 +77,9 @@ html, body, .container, #contenido, #banner, #footer {
 	position: relative;
 	left: 25%;
 	top: 4px;
+}
+#contenidoreg {
+	position: absolute;
+	right: 10%;
+	top: 25%;
 }
