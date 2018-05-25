@@ -1,0 +1,12 @@
+#contenidotablahe, #contenidotablahe1, #contenidotablahe2 {
+	height: auto;
+	padding-left: 0px;
+	text-align: center;
+	background-color: #3d3d3d;
+	color: white;
+	font-size: 20px;
+}
+#contenidotabsol {
+	height: auto;
+	padding-left: 0px;
+}
