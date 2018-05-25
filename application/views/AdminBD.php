@@ -4,6 +4,7 @@
             <button type="button" class="btn btn-warning">Regresar</button>
         </a>
     </div>
+>>>>>>> 3d2e07496eed57f243973db806afa65723926a06
     <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
     <img id="contenidocabimg" src="<?php echo asset_url('images/banadmin.png'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,14 +12,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
+
   <div class="panel-group" id="accordion">
+    <br>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Tabla admin</a>
         </h4>
       </div>
-      <div id="collapse1" class="panel-collapse collapse ">
+      <div id="collapse1" class="panel-collapse collapse  ">
         <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body">
                             <table class="table">
@@ -46,6 +49,7 @@
                         </div>
       </div>
     </div>
+  </div>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -470,5 +474,4 @@
 
 
 </body>
-</html>
 </div>
