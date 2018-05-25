@@ -1,8 +1,11 @@
-html, body, .container, #contenido {
+html, body, .container, #contenido, #banner, #footer {
 	height: 100%;
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
+}
+#banner {
+	height: auto;
 }
 .container {
 	margin-right: 6%;
@@ -20,6 +23,12 @@ html, body, .container, #contenido {
 	position: relative;
 	left: 25px;
 	top: 3px;
+}
+#contenidocerrarsesion {
+	position: relative;
+	top: 5px;
+	left: 80%;
+	display: inline-block;
 }
 .row {
 	height: 100%;

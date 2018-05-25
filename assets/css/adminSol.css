@@ -1,0 +1,16 @@
+#contenidoregresar {
+	position: relative;
+	top: 5px;
+	left: 80%;
+	display: inline-block;
+}
+#contenidotablahe, #contenidotablahe1, #contenidotablahe2 {
+	height: auto;
+	padding-left: 0px;
+	text-align: center;
+	background-color: red;
+}
+#contenidotabsol {
+	height: auto;
+	padding-left: 0px;
+}
