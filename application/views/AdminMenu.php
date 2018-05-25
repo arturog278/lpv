@@ -1,7 +1,7 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
       <div id="contenidocerrarsesion">
-        <a href="http://google.com">
+        <a href="http://localhost:8080/lpv/AdminLogin">
     <button type="button" class="btn btn-danger">Cerrar Sesión</button>
   </a>
   </div>
