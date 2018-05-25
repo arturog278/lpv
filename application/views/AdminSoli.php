@@ -1,7 +1,7 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <div id="contenidoregresar">
-    <a href="http://localhost:8080/lpv/AdminSoli">
+    <a href="http://localhost:8080/lpv/AdminMenu">
     <button type="button" class="btn btn-warning">Regresar</button>
   </a>
   </div>
