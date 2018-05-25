@@ -1,9 +1,9 @@
 <div id="contenido">
-  <div id="contenidoreg">
-    <a href="http://localhost:8080/lpv/AdminMenu">
-      <button type="button" class="btn btn-warning">Regresar</button>
-    </a>
-  </div>
+    <div id="contenidoreg">
+        <a href="http://localhost:8080/lpv/AdminMenu">
+            <button type="button" class="btn btn-warning">Regresar</button>
+        </a>
+    </div>
     <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
     <img id="contenidocabimg" src="<?php echo asset_url('images/banadmin.png'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
