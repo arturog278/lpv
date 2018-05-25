@@ -35,6 +35,7 @@
           </tbody>
         </table>
       </div>
+      <button type="button" class="btn btn-primary">Aceptar Solicitud</button>
     </div>
     <div class="col-sm-6">
       <div class="table-responsive">
@@ -58,6 +59,8 @@
           </tbody>
         </table>
       </div>
+      <button type="button" class="btn btn-danger">Realizar Anotación</button>
+      <button type="button" class="btn btn-success">Concluir Solicitud</button>
     </div>
   </div>
 </div>
