@@ -8,8 +8,8 @@ class AdminBD extends CI_Controller {
         $this->load->template('AdminBD', $data); // this will load the view file
     }
     public function Admin($parametro){
-      swith($parametro){
-        case 1:
+      switch($parametro){
+      case 1:
             $this->load->view('AAdmA', $data);
             break;
        case 2:
@@ -24,7 +24,7 @@ class AdminBD extends CI_Controller {
       }
     }
     public function Alumnos($parametro){
-      swith($parametro){
+      switch($parametro){
         case 1:
             $this->load->view('AAluA', $data);
             break;
@@ -40,7 +40,7 @@ class AdminBD extends CI_Controller {
       }
     }
     public function Anotaciones($parametro){
-      swith($parametro){
+      switch($parametro){
         case 1:
             $this->load->view('AAnoA', $data);
             break;
@@ -54,8 +54,9 @@ class AdminBD extends CI_Controller {
             $this->load->view('AAnoC', $data);
             break;
       }
+    }
       public function Aulas($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('AAluA', $data);
               break;
@@ -71,7 +72,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Clases($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('AClaA', $data);
               break;
@@ -87,7 +88,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Divisiones($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('ADivA', $data);
               break;
@@ -103,7 +104,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Horarios($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('AHorA', $data);
               break;
@@ -119,7 +120,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Materiales($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('AMatA', $data);
               break;
@@ -135,7 +136,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Materias($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('AMriA', $data);
               break;
@@ -151,7 +152,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Prestamos($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('APreA', $data);
               break;
@@ -167,7 +168,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Profesores($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('AProA', $data);
               break;
@@ -183,7 +184,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function RegistroAlumnos($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('ARalA', $data);
               break;
@@ -199,7 +200,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function Registros($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('ARegA', $data);
               break;
@@ -215,7 +216,7 @@ class AdminBD extends CI_Controller {
         }
       }
       public function RegistrosActivos($parametro){
-        swith($parametro){
+        switch($parametro){
           case 1:
               $this->load->view('ARacA', $data);
               break;
@@ -230,5 +231,5 @@ class AdminBD extends CI_Controller {
               break;
         }
       }
-      
+
 }
