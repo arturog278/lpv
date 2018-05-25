@@ -12,24 +12,24 @@
       <span>Reporte Especial</span>
     </div>
   </div>
-  <div id="contenidotabsol" class="row">
+  <div id="contenidotabrep" class="row">
     <div class="col-sm-6">
       <div class="table-responsive">
-        <table class="table">
-          <tr><td><button type="button" class="btn btn-warning">Regresar</button></td></tr>
+        <table id="contenidotabrep1" class="table">
+          <tbody>
+            <tr><td><button type="button" class="btn btn-info">Reporte de material</button></td></tr>
+            <tr><td><button type="button" class="btn btn-info">Reporte de profesores</button></td></tr>
+            <tr><td><button type="button" class="btn btn-info">Reporte de alumnos</button></td></tr>
+          </tbody>
         </table>
       </div>
     </div>
     <div class="col-sm-6">
       <div class="table-responsive">
-        <table class="table">
-          <thead class="thead-light">
-            <tr>
-              <th>Reporte Especial</th>
-            </tr>
-          </thead>
+        <table id="contenidotabrep2" class="table">
           <tbody>
-            <tr><td><button type="button" class="btn btn-warning">Reporte Especial Asistido</button></td></tr>
+            <tr><td><button type="button" class="btn btn-warning">Reporte especial asistido</button></td></tr>
+            <tr><td><button type="button" class="btn btn-danger">Reporte especial no asistido</button></td></tr>
           </tbody>
         </table>
       </div>

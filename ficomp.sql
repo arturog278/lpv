@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2018 a las 05:07:50
+-- Tiempo de generación: 25-05-2018 a las 05:35:38
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.3
 
@@ -31,7 +31,11 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `usuario` varchar(20) DEFAULT NULL,
   `pass` varchar(64) DEFAULT NULL,
-  `lvl` int(1) DEFAULT NULL
+  `lvl` int(1) DEFAULT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `apellidop` varchar(20) NOT NULL,
+  `apellidom` varchar(20) DEFAULT NULL,
+  `adminID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -187,7 +191,8 @@ CREATE TABLE `registros` (
   `horaEntrega` time DEFAULT NULL,
   `firmaPrestamo` int(1) NOT NULL,
   `formaEntrega` int(1) DEFAULT NULL,
-  `fecha` date NOT NULL
+  `fecha` date NOT NULL,
+  `adminID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -205,6 +210,12 @@ CREATE TABLE `registrosactivos` (
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`adminID`);
 
 --
 -- Indices de la tabla `alumnos`
@@ -285,7 +296,8 @@ ALTER TABLE `registroalumnos`
 --
 ALTER TABLE `registros`
   ADD PRIMARY KEY (`registroID`),
-  ADD KEY `claseID` (`claseID`);
+  ADD KEY `claseID` (`claseID`),
+  ADD KEY `adminID` (`adminID`);
 
 --
 -- Indices de la tabla `registrosactivos`
@@ -402,7 +414,8 @@ ALTER TABLE `registroalumnos`
 -- Filtros para la tabla `registros`
 --
 ALTER TABLE `registros`
-  ADD CONSTRAINT `registros_ibfk_1` FOREIGN KEY (`claseID`) REFERENCES `clases` (`claseID`);
+  ADD CONSTRAINT `registros_ibfk_1` FOREIGN KEY (`claseID`) REFERENCES `clases` (`claseID`),
+  ADD CONSTRAINT `registros_ibfk_2` FOREIGN KEY (`adminID`) REFERENCES `admin` (`adminID`);
 
 --
 -- Filtros para la tabla `registrosactivos`
