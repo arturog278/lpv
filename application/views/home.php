@@ -1,5 +1,6 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
+<<<<<<< HEAD
   <div id="contenidoregresar">
     <button type="button" class="btn btn-warning">Regresar</button>
   </div>
@@ -60,4 +61,3 @@
       </div>
     </div>
   </div>
-</div>
