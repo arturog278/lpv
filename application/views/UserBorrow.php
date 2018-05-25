@@ -7,9 +7,15 @@
     </a>
   </div>
   <br/><br/>
-  <select class="selectpicker">
-    <option>Mustard</option>
-    <option>Ketchup</option>
-    <option>Relish</option>
-  </select>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-7">
+      <div class="form-group">
+        <select class="form-control" id="sel1">
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+    </div>
+  </div>
 </div>

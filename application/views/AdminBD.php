@@ -4,7 +4,6 @@
             <button type="button" class="btn btn-warning">Regresar</button>
         </a>
     </div>
->>>>>>> 3d2e07496eed57f243973db806afa65723926a06
     <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
     <img id="contenidocabimg" src="<?php echo asset_url('images/banadmin.png'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
