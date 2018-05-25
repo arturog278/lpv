@@ -72,3 +72,8 @@ html, body, .container, #contenido, #banner, #footer {
 #contenidoado3txt {
 	background-color: #3c7ffc;
 }
+#contenidocabeceraimg {
+	position: absolute;
+	left: 40%;
+	top: 5px;
+}
