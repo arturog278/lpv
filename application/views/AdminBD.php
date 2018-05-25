@@ -17,7 +17,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Tabla admin</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Gestionar administradores</a>
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse  ">
@@ -52,7 +52,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Tabla alumnos</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Gestionar alumnos</a>
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
@@ -87,7 +87,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Tabla anotaciones</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Gestionar anotaciones</a>
         </h4>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
@@ -122,7 +122,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Tabla aulas</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Gestionar aulas</a>
         </h4>
       </div>
       <div id="collapse4" class="panel-collapse collapse">
@@ -157,7 +157,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Tabla clases</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Gestionar clases</a>
         </h4>
       </div>
       <div id="collapse5" class="panel-collapse collapse">
@@ -192,7 +192,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Tabla divisiones</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Gestionar divisiones</a>
         </h4>
       </div>
       <div id="collapse6" class="panel-collapse collapse">
@@ -227,7 +227,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Tabla horarios</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Gestionar horarios</a>
         </h4>
       </div>
       <div id="collapse7" class="panel-collapse collapse">
@@ -262,7 +262,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Tabla materiales</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Gestionar materiales</a>
         </h4>
       </div>
       <div id="collapse8" class="panel-collapse collapse">
@@ -297,7 +297,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Tabla materias</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Gestionar materias</a>
         </h4>
       </div>
       <div id="collapse9" class="panel-collapse collapse">
@@ -332,7 +332,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Tabla prestamos</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Gestionar prestamos</a>
         </h4>
       </div>
       <div id="collapse10" class="panel-collapse collapse">
@@ -367,7 +367,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Tabla profesores</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Gestionar profesores</a>
         </h4>
       </div>
       <div id="collapse11" class="panel-collapse collapse">
@@ -402,7 +402,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Tabla registros</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Gestionar registros</a>
         </h4>
       </div>
       <div id="collapse12" class="panel-collapse collapse">
@@ -437,7 +437,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Tabla registros activos</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Gestionar registros activos</a>
         </h4>
       </div>
       <div id="collapse13" class="panel-collapse collapse">
