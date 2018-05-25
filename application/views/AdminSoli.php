@@ -23,20 +23,19 @@
               <th></th>
             </tr>
             <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
+              <th>Profesor</th>
+              <th>Material</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>John</td>
-              <td>Doe</td>
-              <td>john@example.com</td>
+              <td>Proyector</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <button type="button" class="btn btn-primary">Aceptar Solicitud</button>
     </div>
     <div class="col-sm-6">
       <div class="table-responsive">
@@ -46,20 +45,22 @@
               <th></th>
             </tr>
             <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
+              <th>Profesor</th>
+              <th>Material</th>
+              <th>Anotación</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>John</td>
               <td>Doe</td>
-              <td>john@example.com</td>
+              <td>Proyector</td>
+              <td>0</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <button type="button" class="btn btn-danger">Realizar Anotación</button>
+      <button type="button" class="btn btn-success">Concluir Solicitud</button>
     </div>
   </div>
 </div>
