@@ -11,7 +11,7 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-7">
       <div class="form-group">
-        <select class="form-control" id="sel1">
+        <select class="form-control" id="sel1" placeholder="Seleccione uno:">
           <option>1</option>
           <option>2</option>
         </select>
