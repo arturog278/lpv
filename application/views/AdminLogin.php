@@ -13,9 +13,9 @@
             <h2>Ingreso al sistema</h2>
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin">
-                <span id="reauth-email" class="reauth-email"></span>
-                <input type="cuenta" id="inputEmail" class="form-control" placeholder="Numero de cuenta" required autofocus>
-                <input type="contraseña" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+                <span id="reauth-cuenta" class="reauth-cuenta"></span>
+                <input type="text" id="inputText" class="form-control" placeholder="Usuario" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ingresar</button>
             </form><!-- /form -->
 
