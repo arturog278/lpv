@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <div id="contenidoreg">
     <a href="http://localhost:8080/lpv/AlumnoMenu">
       <button type="button" class="btn btn-warning">Regresar</button>
@@ -37,22 +40,7 @@
                               <table class="table">
                                   <tr>
                                       <td>
-                                          <span class="glyphicon glyphicon-plus text-primary"></span><a href="http://www.jquery2dotnet.com">Altas</a>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          <span class="glyphicon glyphicon-minus text-success"></span><a href="http://www.jquery2dotnet.com">Bajas</a>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          <span class="glyphicon glyphicon-pencil text-info"></span><a href="http://www.jquery2dotnet.com">Cambios</a>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          <span class="glyphicon glyphicon-list-alt text-success"></span><a href="http://www.jquery2dotnet.com">Consultas</a>
+                                          CAMPOS
                                       </td>
                                   </tr>
                               </table>
