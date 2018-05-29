@@ -40,7 +40,7 @@
                               <table class="table">
                                   <tr>
                                       <td>
-                                          CAMPOS
+                                          CAMPOS2 
                                       </td>
                                   </tr>
                               </table>
