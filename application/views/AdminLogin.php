@@ -18,10 +18,10 @@
         <div class="card card-container">
             <h2>Ingreso al sistema</h2>
             <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin">
+            <form class="form-signin" action="AdminLogin/LogIn" method="post">
                 <span id="reauth-cuenta" class="reauth-cuenta"></span>
-                <input type="text" id="inputText" class="form-control" placeholder="Usuario" required autofocus>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+                <input type="text" name="inputText" class="form-control" placeholder="Usuario" required autofocus>
+                <input type="password" name="inputPassword" class="form-control" placeholder="Contraseña" required>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ingresar</button>
             </form><!-- /form -->
 

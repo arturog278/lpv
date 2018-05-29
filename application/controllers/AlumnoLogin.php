@@ -7,4 +7,5 @@ class AlumnoLogin extends CI_Controller {
         $data['title'] = "Your Application Title"; // can be change according to views
         $this->load->template('AlumnoLogin', $data); // this will load the view file
     }
+    
 }
