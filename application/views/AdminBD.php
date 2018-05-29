@@ -332,7 +332,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Gestionar prestamos</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Gestionar préstamos</a>
         </h4>
       </div>
       <div id="collapse10" class="panel-collapse collapse">

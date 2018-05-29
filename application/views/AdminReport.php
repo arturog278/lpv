@@ -23,9 +23,9 @@
             <tr><td><button type="button" class="btn btn-info">Reporte de material</button></td></tr>
             <tr><td><button type="button" class="btn btn-info">Reporte de profesores</button></td></tr>
             <tr><td>
-              <a href="http://localhost:8080/lpv/">
+              <!--<a href="http://localhost:8080/lpv/">-->
                 <button type="button" class="btn btn-success">Reporte de alumnos</button>
-              </a>
+              <!--</a>-->
             </td></tr>
           </tbody>
         </table>
