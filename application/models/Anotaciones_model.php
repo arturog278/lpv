@@ -23,6 +23,12 @@ class Anotaciones_model extends CI_Model {
     return $data;
   }
 
+  public function get_all(){
+    $res = $this->db->get('anotaciones');
+    $data = $res->result_array();
+    return $data;
+  }
+
   public function update($id,$data){
     $this->db->where('anotacionID',$id);
     $this->db->update('anotaciones',$data);
