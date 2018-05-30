@@ -19,20 +19,24 @@ class Profesores_model extends CI_Model {
       $this->db->update('Materiales',$var);
     }
 
-    public function get_credenciales($user,$pass){
-      $this->db->select('nombre');
-      $this->db->where('profesorID',$user);
-      $this->db->where('pass',$pass);
-      $res = $this->db->get('profesores');
-      $data = $res->result_array();
-      return $data[0];
+    public function get_profesores()
+    {
+        $this->db->select(*);
+        $res = $this->db->get('profesores');
+        $data = $res->result_array();
+        return $data;
     }
-
-    public function getall($profesorID,$pass,$nombre,$apellidom,$apellidop){
-      $array = array('profesorID' => $profesorID, 'pass' => $pass, 'nombre' => $nombre, 'apellidom' => $apellidom, 'apellidop' => $apellidop);
-      $this->db->select('*');
-      $this->db->like($array);
-      $res = $this->db->get('profesores');
+    public function getbyID($materialID)
+    {
+      $this->db->where('profesoresID',$profesoresID);
+      $data = $res->result_array();
+      return $data;
+    }
+    public function getbyNombre($nombre)
+    {
+      $this->db->where('nombre',$nombre);
+      $this->db->where('apellidop',$apellidop);
+      $this->db->where('appellidom',$apellidom);
       $data = $res->result_array();
       return $data;
     }

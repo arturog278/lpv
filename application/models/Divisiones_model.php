@@ -19,18 +19,14 @@ class Divisiones_model extends CI_Model {
       $this->db->update('Divisiones',$var);
     }
 
-    public function getall()
-    {
-        $res = $this->db->get('profesores');
-        $data = $res->result_array();
-        return $data;
-    }
-
-    public function getbyNombre($nombre)
-    {
-      $this->db->where('nombre',$nombre);
-      $res = $this->db->get('Divisiones');
+    public function getall($divisionID,$sigla,$nombre){
+      $array = array('divisionID' => $divisionID, 'sigla' => $sigla, 'nombre' => $nombre);
+      $this->db->select('*');
+      $this->db->like($array);
+      $res = $this->db->get('divisiones');
       $data = $res->result_array();
       return $data;
     }
+
+
   }

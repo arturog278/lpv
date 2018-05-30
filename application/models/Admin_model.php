@@ -24,12 +24,16 @@ class Admin_model extends CI_Model {
       return $data[0];
     }
 
-    public function get_users()
+    public function getall($adminID,$nombre,$apellidop,$apellidom,$user,$pass)
     {
-        $this->db->select('usuario','nombre','apellidop','apellidom','lvl','adminID');
-        $res = $this->db->get('admin');
-        $data = $res->result_array();
-        return $data;
+      $array = array('adminID' => $adminID,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom,'user' => $user,'pass' => $pass);
+      $this->db->select('*');
+      $this->db->from('admin');
+    //  $this->db->join('registroalumnos', 'cuenta = alumnoID');
+      $this->db->like($array);
+      $query = $this->db->get();
+      $data = $query->result_array();
+      return $data;
     }
 
     public function update($id,$data){
