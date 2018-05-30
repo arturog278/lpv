@@ -21,7 +21,6 @@ class Profesores_model extends CI_Model {
 
     public function get_profesores()
     {
-        $this->db->select(*);
         $res = $this->db->get('profesores');
         $data = $res->result_array();
         return $data;
@@ -35,8 +34,6 @@ class Profesores_model extends CI_Model {
     public function getbyNombre($nombre)
     {
       $this->db->where('nombre',$nombre);
-      $this->db->where('apellidop',$apellidop);
-      $this->db->where('appellidom',$apellidom);
       $data = $res->result_array();
       return $data;
     }

@@ -17,7 +17,6 @@ class Aulas_model extends CI_Model {
 
     public function getall()
     {
-        $this->db->select(*);
         $res = $this->db->get('aulas');
         $data = $res->result_array();
         return $data;

@@ -44,12 +44,20 @@ class Altas extends CI_Controller {
   }
   public function profesores(){
     $this->load->model('Profesores_model');
-    $profesoresID = $this ->input->post('profesoresID');
+    $profesorID = $this ->input->post('profesorID');
     $pass = $this ->input->post('pass');
     $nombre = $this->input->post('nombre');
     $apellidop = $this->input->post('apellidop');
     $apellidom = $this->input->post('apellidom');
-    $data = array('profesoresID' => $profesoresID, 'pass' => $pass,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom);
+    $data = array('profesorID' => $profesorID, 'pass' => $pass,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom);
     $this->Profesores_model->insert($data);
+  }
+  public function aulas(){
+    $this->load->model('Aulas_model');
+    $aulaID = $this ->input->post('aulaID');
+    $numero = $this ->input->post('numero');
+    $edificio = $this->input->post('edificio');
+    $data = array('aulaID' => $aulaID, 'numero' => $numero,'edificio' => $edificio);
+    $this->Aulas_model->insert($data);
   }
 }

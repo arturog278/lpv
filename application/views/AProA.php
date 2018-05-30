@@ -21,8 +21,8 @@
         </div>
       </div>
       <div class="form-group">
-        <input id="profesorID" name="profesorID" type="number" class="form-control" required>
-        <label for="profesorID">ID de profesor</label>
+        <input id="profesoresID" name="profesoresID" type="number" class="form-control" required>
+        <label for="profesoresID">ID de profesor</label>
       </div>
       <div class="form-group">
         <input id="pass" name="pass" type="password" class="form-control"  required>
