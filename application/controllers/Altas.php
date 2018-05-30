@@ -13,12 +13,15 @@ class Altas extends CI_Controller {
     $data = array('cuenta' => $cuenta, 'nombre' => $nombre,'appelidop' => $appat,'apellidom' => $apmat,'divisionID'=>$div);
     $res = $this->Alumno_model->insert($data);
     if($res!=-1){
-      echo "<script language=javascript>alert('Alumno agregado correctmente".$res."');</script>";
-      $this->load->template(base_url().'AdminBD');
+      echo '<script type="text/javascript">';
+      echo 'alert("Alumno agregado correctamente");';
+      echo 'window.location.href = "'.site_url('AdminBD').'";';
+      echo '</script>';
     }else{
-      echo "<script language=javascript>alert('Error al insertar el usuario: ".$res."');</script>";
-      sleep(5);
-      redirect('/AdminBD/Alumnos/1');
+      echo '<script type="text/javascript">';
+      echo 'alert("Ya existe un alumno registrado con el numero de cuenta: '.$cuenta.'");';
+      echo 'window.location.href = "'.site_url('AdminBD/alumnos/1').'";';
+      echo '</script>';
     }
   }
   public function administradores()
