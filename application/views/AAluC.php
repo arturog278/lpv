@@ -5,39 +5,39 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <div id="contenidoreg">
-      <a href="http://localhost:8080/lpv/AdminDB">
+      <a href="http://localhost:8080/lpv/AdminBD">
         <button type="button" class="btn btn-warning">Regresar</button>
       </a>
     </div>
   <div class="row">
-    <form role="form" class="col-md-4 go-right">
+    <form role="form" class="col-md-4 go-right" action = <?php echo base_url().'Consulta/alumnos' ?> method='post' >
       <div id="noApply" class="row">
         <div id="noApply" class="col-sm-8">
           <h2>Busqueda de Alumnos</h2>
           <p>Ingresa los datos en los espacios siguientes</p>
         </div>
         <div class="col-sm-4">
-          <br/><br/><button id="btnbuscar" type="button" class="btn btn-success">Busqueda</button>
+          <br/><br/><button id="btnbuscar" type="submit" class="btn btn-success">Busqueda</button>
         </div>
       </div>
       <div class="form-group">
-        <input id="alumnoID" name="alumnoID" type="number" class="form-control" required>
+        <input id="alumnoID" name="cuenta" type="number" class="form-control">
         <label for="alumnoID">Numero de cuenta</label>
       </div>
       <div class="form-group">
-        <input id="apellidoP" name="apellidoP" type="text" class="form-control"  required>
+        <input id="apellidoP" name="appelidoP" type="text" class="form-control">
         <label for="apellidoP">Apellido Paterno</label>
       </div>
       <div class="form-group">
-        <input id="apellidoM" name="apellidoM" type="text" class="form-control" required >
+        <input id="apellidoM" name="apellidoM" type="text" class="form-control">
         <label for="apellidoM">Apellido Materno</label>
       </div>
       <div class="form-group">
-        <input id="nombre" name="nombre" type="text" class="form-control" required>
+        <input id="nombre" name="nombre" type="text" class="form-control">
         <label for="nombre">Nombre(s)</label>
       </div>
       <div class="form-group">
-        <input id="divisionID" name="divisionID" type="text" class="form-control"  required>
+        <input id="divisionID" name="divisionID" type="text" class="form-control">
         <label for="divisionID">División</label>
       </div>
     </form>
@@ -58,16 +58,18 @@
             </tr>
           </thead>
           <tbody>
+            <?php foreach ($alumnos as $alumnos) { ?>
             <tr>
-              <td>1113159</td>
-              <td>Valentín</td>
-              <td>Medina</td>
-              <td>Nieto</td>
-              <td>ICO</td>
+              <td><?php echo $alumnos['cuenta'];?></td>
+              <td><?php echo $alumnos['nombre'];?></td>
+              <td><?php echo $alumnos['appelidop'];?></td>
+              <td><?php echo $alumnos['apellidom']?></td>
+              <td><?php echo $alumnos['divisionID'];?></td>
               <td>Editar</td>
               <td>Borrar</td>
             </tr>
-            <tr>
+          <?php } ?>
+   <!--        <tr>
               <td>1420836</td>
               <td>Sebastian</td>
               <td>García</td>
@@ -247,6 +249,7 @@
               <td>Editar</td>
               <td>Borrar</td>
             </tr>
+          -->
           </tbody>
         </table>
       </div>

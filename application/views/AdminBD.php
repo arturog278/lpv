@@ -76,7 +76,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="AdminBD/Alumnos/4">Consultas</a>
+                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="Consulta/alumnos">Consultas</a>
                                     </td>
                                 </tr>
                             </table>
