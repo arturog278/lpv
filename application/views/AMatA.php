@@ -1,6 +1,7 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<link href="<?php echo asset_url('css/AAluA.css'); ?>" rel="stylesheet" type="text/css">
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <div id="contenidoreg">

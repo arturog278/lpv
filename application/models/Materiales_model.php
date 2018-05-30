@@ -21,9 +21,8 @@ class Materiales_model extends CI_Model {
       $this->db->update('Materiales',$var);
     }
 
-    public function get_materiales()
+    public function getall()
     {
-        $this->db->select(*);
         $res = $this->db->get('materiales');
         $data = $res->result_array();
         return $data;
@@ -31,12 +30,14 @@ class Materiales_model extends CI_Model {
     public function getbyID($materialID)
     {
       $this->db->where('materialID',$materialID);
+      $res = $this->db->get('materiales');
       $data = $res->result_array();
       return $data;
     }
     public function getbyNombre($nombre)
     {
       $this->db->where('nombre',$nombre);
+      $res = $this->db->get('materiales');
       $data = $res->result_array();
       return $data;
     }

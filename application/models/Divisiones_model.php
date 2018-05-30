@@ -1,40 +1,35 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Profesores_model extends CI_Model {
+class Divisiones_model extends CI_Model {
 
     public function __constructor()
     {
         parent::__construct();
     }
     public function insert($var){
-      $this->db->insert('Profesores',$var);
+      $this->db->insert('Divisiones',$var);
     }
 
     public function delete($var){
-      $this->db->delete('Profesores', array('profesoresID' => $var));
+      $this->db->delete('Divisiones', array('divisionID' => $var));
     }
 
     public function update($cuenta, $var){
-      $this->db->where('materialId',$profesoresID);
-      $this->db->update('Materiales',$var);
+      $this->db->where('divisionID',$profesoresID);
+      $this->db->update('Divisiones',$var);
     }
 
-    public function get_profesores()
+    public function getall()
     {
         $res = $this->db->get('profesores');
         $data = $res->result_array();
         return $data;
     }
-    public function getbyID($materialID)
-    {
-      $this->db->where('profesoresID',$profesoresID);
-      $data = $res->result_array();
-      return $data;
-    }
+
     public function getbyNombre($nombre)
     {
       $this->db->where('nombre',$nombre);
-
+      $res = $this->db->get('Divisiones');
       $data = $res->result_array();
       return $data;
     }
