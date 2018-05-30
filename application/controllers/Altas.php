@@ -14,10 +14,11 @@ class Altas extends CI_Controller {
     $res = $this->Alumno_model->insert($data);
     if($res!=-1){
       echo "<script language=javascript>alert('Alumno agregado correctmente".$res."');</script>";
-      $this->load->view(base_url().'AdminBD');
+      $this->load->template(base_url().'AdminBD');
     }else{
       echo "<script language=javascript>alert('Error al insertar el usuario: ".$res."');</script>";
-      $this->load->view(base_url().'AdminBD/Alumnos/1');
+      sleep(5);
+      redirect('/AdminBD/Alumnos/1');
     }
   }
 
