@@ -1,38 +1,44 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div id="contenidouso1" class="col-sm-*">
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </form>
+  <div id="contenidoreg">
+      <a href="http://localhost:8080/lpv/AdminDB">
+        <button type="button" class="btn btn-warning">Regresar</button>
+      </a>
     </div>
+  <div class="row">
+    <form role="form" class="col-md-9 go-right">
+      <div id="noApply" class="row">
+        <div class="col-sm-10">
+          <h2>Alta de Alumnos</h2>
+          <p>Ingresa los datos en los espacios siguientes</p>
+        </div>
+        <div class="col-sm-2">
+          <br/><br/><button id="btnregistrar" type="button" class="btn btn-success">Registrar</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <input id="alumnoID" name="alumnoID" type="number" class="form-control" placeholder="Numero de cuenta" required>
+        <label for="alumnoID">Numero de cuenta</label>
+      </div>
+      <div class="form-group">
+        <input id="apellidoP" name="apellidoP" type="text" class="form-control" placeholder="Apellido Paterno" required>
+        <label for="apellidoP">Apellido Paterno</label>
+      </div>
+      <div class="form-group">
+        <input id="apellidoM" name="apellidoM" type="text" class="form-control" placeholder="Apellido Materno">
+        <label for="apellidoM">Apellido Materno</label>
+      </div>
+      <div class="form-group">
+        <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre(s)" required>
+        <label for="nombre">Nombre(s)</label>
+      </div>
+      <div class="form-group">
+        <input id="divisionID" name="divisionID" type="text" class="form-control" placeholder="División" required>
+        <label for="divisionID">División</label>
+      </div>
+    </form>
   </div>
 </div>
