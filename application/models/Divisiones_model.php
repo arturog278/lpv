@@ -14,8 +14,8 @@ class Divisiones_model extends CI_Model {
       $this->db->delete('Divisiones', array('divisionID' => $var));
     }
 
-    public function update($cuenta, $var){
-      $this->db->where('divisionID',$profesoresID);
+    public function update($divisionID, $var){
+      $this->db->where('divisionID',$divisionID);
       $this->db->update('Divisiones',$var);
     }
 
