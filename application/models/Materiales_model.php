@@ -16,8 +16,8 @@ class Materiales_model extends CI_Model {
       $this->db->delete('Materiales', array('materialID' => $var));
     }
 
-    public function update($cuenta, $var){
-      $this->db->where('materialId',$materialID);
+    public function update($materialID, $var){
+      $this->db->where('materialID',$materialID);
       $this->db->update('Materiales',$var);
     }
 
