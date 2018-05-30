@@ -24,8 +24,17 @@ class Admin_model extends CI_Model {
       return $data[0];
     }
 
-    public function get_by_usuario($var)
+    public function get_users()
     {
-
+        $this->db->select('usuario','nombre','apellidop','apellidom','lvl','adminID');
+        $res = $this->db->get('admin');
+        $data = $res->result_array();
+        return $data;
     }
+
+    public function update($id,$data){
+      $this->db->where('adminID', $id);
+      $this->db->update('admin', $data);
+    }
+
 }

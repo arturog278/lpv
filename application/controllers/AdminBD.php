@@ -4,230 +4,230 @@ class AdminBD extends CI_Controller {
 
     public function index()
     {
-        $data['title'] = "Your Application Title"; // can be change according to views
-        $this->load->template('AdminBD', $data); // this will load the view file
+        $data['title'] = "Your Application Title"; // can be change according to templates
+        $this->load->template('AdminBD', $data); // this will load the template file
     }
     public function Admin($parametro){
       switch($parametro){
       case 1:
-            $this->load->view('AAdmA', $data);
+            $this->load->template('AAdmA');
             break;
        case 2:
-            $this->load->view('AAdmB', $data);
+            $this->load->template('AAdmB');
             break;
        case 3:
-            $this->load->view('AAdmE', $data);
+            $this->load->template('AAdmE');
             break;
       case 4:
-            $this->load->view('AAdmC', $data);
+            $this->load->template('AAdmC');
             break;
       }
     }
     public function Alumnos($parametro){
       switch($parametro){
         case 1:
-            $this->load->view('AAluA', $data);
+            $this->load->template('AAluA');
             break;
        case 2:
-            $this->load->view('AAluB', $data);
+            $this->load->template('AAluB');
             break;
        case 3:
-            $this->load->view('AAluE', $data);
+            $this->load->template('AAluE');
             break;
       case 4:
-            $this->load->view('AAluC', $data);
+            $this->load->template('AAluC' );
             break;
       }
     }
     public function Anotaciones($parametro){
       switch($parametro){
         case 1:
-            $this->load->view('AAnoA', $data);
+            $this->load->template('AAnoA' );
             break;
        case 2:
-            $this->load->view('AAnoB', $data);
+            $this->load->template('AAnoB' );
             break;
        case 3:
-            $this->load->view('AAnoE', $data);
+            $this->load->template('AAnoE' );
             break;
       case 4:
-            $this->load->view('AAnoC', $data);
+            $this->load->template('AAnoC' );
             break;
       }
     }
       public function Aulas($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('AAluA', $data);
+              $this->load->template('AAluA' );
               break;
          case 2:
-              $this->load->view('AAluB', $data);
+              $this->load->template('AAluB' );
               break;
          case 3:
-              $this->load->view('AAluE', $data);
+              $this->load->template('AAluE' );
               break;
         case 4:
-              $this->load->view('AAluC', $data);
+              $this->load->template('AAluC' );
               break;
         }
       }
       public function Clases($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('AClaA', $data);
+              $this->load->template('AClaA' );
               break;
          case 2:
-              $this->load->view('AClaB', $data);
+              $this->load->template('AClaB' );
               break;
          case 3:
-              $this->load->view('AClaE', $data);
+              $this->load->template('AClaE' );
               break;
         case 4:
-              $this->load->view('AClaC', $data);
+              $this->load->template('AClaC' );
               break;
         }
       }
       public function Divisiones($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('ADivA', $data);
+              $this->load->template('ADivA' );
               break;
          case 2:
-              $this->load->view('ADivB', $data);
+              $this->load->template('ADivB' );
               break;
          case 3:
-              $this->load->view('ADivE', $data);
+              $this->load->template('ADivE' );
               break;
         case 4:
-              $this->load->view('ADivC', $data);
+              $this->load->template('ADivC' );
               break;
         }
       }
       public function Horarios($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('AHorA', $data);
+              $this->load->template('AHorA' );
               break;
          case 2:
-              $this->load->view('AHorB', $data);
+              $this->load->template('AHorB' );
               break;
          case 3:
-              $this->load->view('AHorE', $data);
+              $this->load->template('AHorE' );
               break;
         case 4:
-              $this->load->view('AHorC', $data);
+              $this->load->template('AHorC' );
               break;
         }
       }
       public function Materiales($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('AMatA', $data);
+              $this->load->template('AMatA' );
               break;
          case 2:
-              $this->load->view('AMatB', $data);
+              $this->load->template('AMatB' );
               break;
          case 3:
-              $this->load->view('AMatE', $data);
+              $this->load->template('AMatE' );
               break;
         case 4:
-              $this->load->view('AMatC', $data);
+              $this->load->template('AMatC' );
               break;
         }
       }
       public function Materias($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('AMriA', $data);
+              $this->load->template('AMriA' );
               break;
          case 2:
-              $this->load->view('AMriB', $data);
+              $this->load->template('AMriB' );
               break;
          case 3:
-              $this->load->view('AMriE', $data);
+              $this->load->template('AMriE' );
               break;
         case 4:
-              $this->load->view('AMriC', $data);
+              $this->load->template('AMriC' );
               break;
         }
       }
       public function Prestamos($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('APreA', $data);
+              $this->load->template('APreA' );
               break;
          case 2:
-              $this->load->view('APreB', $data);
+              $this->load->template('APreB' );
               break;
          case 3:
-              $this->load->view('APreE', $data);
+              $this->load->template('APreE' );
               break;
         case 4:
-              $this->load->view('APreC', $data);
+              $this->load->template('APreC' );
               break;
         }
       }
       public function Profesores($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('AProA', $data);
+              $this->load->template('AProA' );
               break;
          case 2:
-              $this->load->view('AProB', $data);
+              $this->load->template('AProB' );
               break;
          case 3:
-              $this->load->view('AProE', $data);
+              $this->load->template('AProE' );
               break;
         case 4:
-              $this->load->view('AProC', $data);
+              $this->load->template('AProC' );
               break;
         }
       }
       public function RegistroAlumnos($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('ARalA', $data);
+              $this->load->template('ARalA' );
               break;
          case 2:
-              $this->load->view('ARalB', $data);
+              $this->load->template('ARalB' );
               break;
          case 3:
-              $this->load->view('ARalE', $data);
+              $this->load->template('ARalE' );
               break;
         case 4:
-              $this->load->view('ARalC', $data);
+              $this->load->template('ARalC' );
               break;
         }
       }
       public function Registros($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('ARegA', $data);
+              $this->load->template('ARegA' );
               break;
          case 2:
-              $this->load->view('ARegB', $data);
+              $this->load->template('ARegB' );
               break;
          case 3:
-              $this->load->view('ARegE', $data);
+              $this->load->template('ARegE' );
               break;
         case 4:
-              $this->load->view('ARegC', $data);
+              $this->load->template('ARegC' );
               break;
         }
       }
       public function RegistrosActivos($parametro){
         switch($parametro){
           case 1:
-              $this->load->view('ARacA', $data);
+              $this->load->template('ARacA' );
               break;
          case 2:
-              $this->load->view('ARacB', $data);
+              $this->load->template('ARacB' );
               break;
          case 3:
-              $this->load->view('ARacE', $data);
+              $this->load->template('ARacE' );
               break;
         case 4:
-              $this->load->view('ARacC', $data);
+              $this->load->template('ARacC' );
               break;
         }
       }
