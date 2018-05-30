@@ -23,7 +23,6 @@ class Materiales_model extends CI_Model {
 
     public function get_materiales()
     {
-        $this->db->select(*);
         $res = $this->db->get('materiales');
         $data = $res->result_array();
         return $data;

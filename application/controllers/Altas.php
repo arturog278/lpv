@@ -30,7 +30,7 @@ class Altas extends CI_Controller {
     $appat = $this->input->post('apellidoP');
     $apmat = $this->input->post('apellidoM');
     $data = array('user' => $user, 'nombre' => $nombre,'appelidop' => $appat,'apellidom' => $apmat,'lvl'=>$lvl,'pass'=>$pass);
-    $this->Alumno_model->insert($data);
+    $this->Admin_model->insert($data);
   }
   public function materiales()
   {
@@ -43,13 +43,21 @@ class Altas extends CI_Controller {
     $this->Materiales_model->insert($data);
   }
   public function profesores(){
-    $this->load->model('Materiales_model');
-    $profesoresID = $this ->input->post('profesoresID');
+    $this->load->model('Profesores_model');
+    $profesorID = $this ->input->post('profesorID');
     $pass = $this ->input->post('pass');
     $nombre = $this->input->post('nombre');
     $apellidop = $this->input->post('apellidop');
     $apellidom = $this->input->post('apellidom');
-    $data = array('profesoresID' => $profesoresID, 'pass' => $pass,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom);
-    $this->Materiales_model->insert($data);
+    $data = array('profesorID' => $profesorID, 'pass' => $pass,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom);
+    $this->Profesores_model->insert($data);
+  }
+  public function aulas(){
+    $this->load->model('Aulas_model');
+    $aulaID = $this ->input->post('aulaID');
+    $numero = $this ->input->post('numero');
+    $edificio = $this->input->post('edificio');
+    $data = array('aulaID' => $aulaID, 'numero' => $numero,'edificio' => $edificio);
+    $this->Aulas_model->insert($data);
   }
 }
