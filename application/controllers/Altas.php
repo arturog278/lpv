@@ -20,7 +20,7 @@ class Altas extends CI_Controller {
     $this->Alumno_model->insert($data);
   }
 
-  public function alumnos()
+  public function administradores()
   {
     $this->load->model('Admin_model');
     $user = $this->input->post('user');
@@ -35,8 +35,21 @@ class Altas extends CI_Controller {
   public function materiales()
   {
     $this->load->model('Materiales_model');
-    $user =
+    $nombre = $this ->input->post('nombre');
+    $descripcion = $this ->input->post('descripcion');
+    $fechaAdquisicion= $this ->input->post('fechaAdquisicion');
+    $modelo = $this ->input->post('modelo');
+    $data = array('nombre' => $nombre, 'descripcion' => $descripcion,'fechaAdquisicion' => $fechaAdquisicion,'modelo' => $modelo);
+    $this->Materiales_model->insert($data);
   }
-
-
+  public function profesores(){
+    $this->load->model('Materiales_model');
+    $profesoresID = $this ->input->post('profesoresID');
+    $pass = $this ->input->post('pass');
+    $nombre = $this->input->post('nombre');
+    $apellidop = $this->input->post('apellidop');
+    $apellidom = $this->input->post('apellidom');
+    $data = array('profesoresID' => $profesoresID, 'pass' => $pass,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom);
+    $this->Materiales_model->insert($data);
+  }
 }
