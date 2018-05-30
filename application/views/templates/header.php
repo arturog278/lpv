@@ -9,6 +9,8 @@
 		<link href="<?php echo asset_url('css/adminSol.css'); ?>" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url('css/adminbd.css'); ?>" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url('css/adminRep.css'); ?>" rel="stylesheet" type="text/css">
+		<link href="<?php echo asset_url('css/userBorrow.css'); ?>" rel="stylesheet" type="text/css">
+		<link href="<?php echo asset_url('css/userBorrowSearch.css'); ?>" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>

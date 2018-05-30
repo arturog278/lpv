@@ -7,7 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <div id="contenidoreg">
     <a href="http://localhost:8080/lpv/AlumnoMenu">
       <button type="button" class="btn btn-warning">Regresar</button>
@@ -16,7 +16,7 @@
   <br/><br/>
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-6">
+    <div class="col-sm-7">
       <div class="form-group">
         <select class="form-control" id="sel1" placeholder="Seleccione uno:">
           <option>1</option>
@@ -24,33 +24,34 @@
         </select>
       </div>
     </div>
-    <div class="col-sm-1"></div>
-    <div class="col-sm-*">
-      <body>
-        <div class="panel-group" id="accordion">
-          <br>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Gestionar administradores</a>
-              </h4>
-            </div>
-            <div id="collapse1" class="panel-collapse collapse  ">
-              <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                  <table class="table">
-                    <tr>
-                      <td>
-                        CAMPOS2 
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </body>
-    </div>
   </div>
+  <body>
+      <div class="panel-group" id="accordion">
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Gestionar administradores</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse  ">
+          <div id="collapseOne" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                              <table class="table">
+                                  <tr>
+                                      <td>
+                                          CAMPOS
+                                      </td>
+                                  </tr>
+                              </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+                </body>
 </div>
