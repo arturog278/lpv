@@ -21,22 +21,13 @@ class Materiales_model extends CI_Model {
       $this->db->update('Materiales',$var);
     }
 
-    public function get_materiales()
-    {
-        $res = $this->db->get('materiales');
-        $data = $res->result_array();
-        return $data;
-    }
-    public function getbyID($materialID)
-    {
-      $this->db->where('materialID',$materialID);
+    public function getall($materialID,$descripcion,$nombre,$fechaAdquisicion,$modelo){
+      $array = array('materialID' => $materialID, 'descripcion' => $descripcion, 'nombre' => $nombre, 'fechaAdquisicion' => $fechaAdquisicion, 'modelo' => $modelo);
+      $this->db->select('*');
+      $this->db->like($array);
+      $res = $this->db->get('materiales');
       $data = $res->result_array();
       return $data;
     }
-    public function getbyNombre($nombre)
-    {
-      $this->db->where('nombre',$nombre);
-      $data = $res->result_array();
-      return $data;
-    }
+
 }

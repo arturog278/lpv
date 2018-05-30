@@ -15,11 +15,16 @@ class Aulas_model extends CI_Model {
       $this->db->delete('aulas', array('aulaID' => $var));
     }
 
-    public function getall()
+    public function getall($aulaID,$numero,$edificio)
     {
-        $res = $this->db->get('aulas');
-        $data = $res->result_array();
-        return $data;
+      $array = array('aulaID' => $aulaID,'numero' => $numero,'edificio' => $edificio);
+      $this->db->select('*');
+      $this->db->from('aulas');
+    //  $this->db->join('registroalumnos', 'cuenta = alumnoID');
+      $this->db->like($array);
+      $query = $this->db->get();
+      $data = $query->result_array();
+      return $data;
     }
 
     public function update($id,$data){

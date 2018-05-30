@@ -9,10 +9,15 @@ class Alumno_model extends CI_Model {
 
     public function insert($var){
       $this->db->insert('alumnos',$var);
+      //$error = $this->db->error_message();
+      $rows = $this->db->affected_rows();
+    //  $res = array('error' => $error,'rows' => $rows );
+      return $rows;
     }
 
     public function delete($var){
       $this->db->delete('alumnos', array('cuenta' => $var));
+      return $this->db->affected_rows();
     }
 
     public function update($cuenta, $var){
@@ -28,29 +33,15 @@ class Alumno_model extends CI_Model {
       return $data[0];
     }
 
-    public function getall()
+    public function getall($cuenta,$nombre,$apellidop,$apellidom,$divisionID)
     {
+      $array = array('cuenta' => $cuenta,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom,'divisionID' => $divisionID);
       $this->db->select('*');
       $this->db->from('alumnos');
-      $this->db->join('registroalumnos', 'cuenta = alumnoID');
-
-  $query = $this->db->get();
-      return $data;
-    }
-    public function getbyName($nombre,$apellidop,$apellidom)
-    {
-      $this->db->where('nombre',$nombre);
-      $this->db->where('apellidop',$apellidop);
-      $this->db->where('apellidom',$apellidom);
-      $res = $this->db->get('alumnos');
-      $data = $res->result_array();
-      return $data;
-    }
-    public function getbyCuenta($cuenta)
-    {
-      $this->db->where('cuenta',$cuenta);
-      $res = $this->db->get('alumnos');
-      $data = $res->result_array();
+    //  $this->db->join('registroalumnos', 'cuenta = alumnoID');
+      $this->db->like($array);
+      $query = $this->db->get();
+      $data = $query->result_array();
       return $data;
     }
 }

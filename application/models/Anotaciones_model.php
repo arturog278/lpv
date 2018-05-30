@@ -23,7 +23,10 @@ class Anotaciones_model extends CI_Model {
     return $data;
   }
 
-  public function get_all(){
+  public function getall($anotacionID,$prestamoID,$descripcion,$resuelto){
+    $array = array('anotacionID' => $anotacionID, 'prestamoID' => $prestamoID, 'descripcion' => $descripcion, 'resuelto' => $resuelto);
+    $this->db->select('*');
+    $this->db->like($array); 
     $res = $this->db->get('anotaciones');
     $data = $res->result_array();
     return $data;
