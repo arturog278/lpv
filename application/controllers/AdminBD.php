@@ -44,8 +44,10 @@ class AdminBD extends CI_Controller {
             redirect(base_url().'AdminBD/Alumnos/3');
             break;
       case 4:
-            $this->load->template('AAluC' );
-            redirect(base_url().'AdminBD/Alumnos/4');
+            $this->load->model('Alumno_model');
+            $data['alumnos'] = $this->Alumno_model->getall('','','','','');
+            $this->load->template('AAluC',$data);
+          //  redirect(base_url().'AdminBD/Alumnos/4');
             break;
       }
     }

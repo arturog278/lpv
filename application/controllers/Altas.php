@@ -24,6 +24,7 @@ class Altas extends CI_Controller {
       echo '</script>';
     }
   }
+  
   public function administradores()
   {
     $this->load->model('Admin_model');

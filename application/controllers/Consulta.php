@@ -5,8 +5,14 @@ class Consulta extends CI_Controller {
   public function alumnos()
   {
     $this->load->model('Alumno_model');
-    $data = $this->Alumno_model->getall($cuenta,$nombre,$apellidop,$apellidom,$divisionID);
-    return $data;
+    $cuenta = $this->input->post('cuenta');
+    $nombre = $this->input->post('nombre');
+    $apellidop = $this->input->post('appelidoP');
+    $apellidom = $this->input->post('apellidoM');
+    $divisionID = $this->input->post('divisionID');
+    $data['alumnos'] = $this->Alumno_model->getall($cuenta,$nombre,$apellidop,$apellidom,$divisionID);
+    $this->load->template('AAluC',$data);
+  //  redirect(base_url().'AdminBD/Alumnos/4');
   }
 
   public function administradores()
@@ -38,7 +44,7 @@ class Consulta extends CI_Controller {
   }
   public function profesores(){
     $this->load->model('Profesores_model');
-    $data->Profesores_model->getall($profesorID,$pass,$nombre,$apellidom,$apellidop;
+    $data->Profesores_model->getall($profesorID,$pass,$nombre,$apellidom,$apellidop);
     return $data;
   }
 }
