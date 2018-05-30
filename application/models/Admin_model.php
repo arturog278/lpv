@@ -29,10 +29,10 @@ class Admin_model extends CI_Model {
         $this->db->select('usuario','nombre','apellidop','apellidom','lvl','adminID');
         $res = $this->db->get('admin');
         $data = $res->result_array();
-        return $data
+        return $data;
     }
 
-    public function update_usuario($id,$data){
+    public function update($id,$data){
       $this->db->where('adminID', $id);
       $this->db->update('admin', $data);
     }

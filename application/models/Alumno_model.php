@@ -30,8 +30,11 @@ class Alumno_model extends CI_Model {
 
     public function getall()
     {
-      $res = $this->db->get('alumno');
-      $data = $res->result_array();
+      $this->db->select('*');
+      $this->db->from('alumnos');
+      $this->db->join('registroalumnos', 'cuenta = alumnoID');
+
+  $query = $this->db->get();
       return $data;
     }
     public function getbyName($nombre,$apellidop,$apellidom)
