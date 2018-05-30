@@ -5,19 +5,19 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <div id="contenidoreg">
-      <a href="http://localhost:8080/lpv/AdminDB">
+      <a href="<?php echo site_url('AdminBD') ?>">
         <button type="button" class="btn btn-warning">Regresar</button>
       </a>
     </div>
   <div class="row">
-    <form role="form" class="col-md-9 go-right">
+    <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Altas/alumnos')?>" method="post">
       <div id="noApply" class="row">
         <div class="col-sm-10">
           <h2>Alta de Alumnos</h2>
           <p>Ingresa los datos en los espacios siguientes</p>
         </div>
         <div class="col-sm-2">
-          <br/><br/><button id="btnregistrar" type="button" class="btn btn-success">Registrar</button>
+          <br/><br/><button id="btnregistrar" type="submit" class="btn btn-success">Registrar</button>
         </div>
       </div>
       <div class="form-group">
