@@ -61,7 +61,7 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-plus text-primary"></span><a href="AdminBD/Alumnos/1">Altas</a>
+                                        <span class="glyphicon glyphicon-plus text-primary"></span><a href="<?php redirect(base_url().'AdminBD/Alumnos/1')?>">Altas</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -76,7 +76,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="http://www.jquery2dotnet.com">Consultas</a>
+                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="<?php redirect(base_url().'AdminBD/Alumnos/4')?>">Consultas</a>
                                     </td>
                                 </tr>
                             </table>

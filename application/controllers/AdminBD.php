@@ -11,7 +11,6 @@ class AdminBD extends CI_Controller {
       switch($parametro){
       case 1:
             $this->load->template('AAdmA');
-            redirect(base_url() . 'AdminBD/Admin/1');
             break;
        case 2:
             $this->load->template('AAdmB');

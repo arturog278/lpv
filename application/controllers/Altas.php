@@ -15,7 +15,7 @@ class Altas extends CI_Controller {
     if($res!=-1){
       echo '<script type="text/javascript">';
       echo 'alert("Alumno agregado correctamente");';
-      echo 'window.location.href = "'.site_url('AdminBD').'";';
+      echo 'window.location.href = "'.site_url('AdminBD/alumnos/1').'";';
       echo '</script>';
     }else{
       echo '<script type="text/javascript">';
