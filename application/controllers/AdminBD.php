@@ -60,16 +60,16 @@ class AdminBD extends CI_Controller {
       public function Aulas($parametro){
         switch($parametro){
           case 1:
-              $this->load->template('AAluA' );
+              $this->load->template('AAulA' );
               break;
          case 2:
-              $this->load->template('AAluB' );
+              $this->load->template('AAulB' );
               break;
          case 3:
-              $this->load->template('AAluE' );
+              $this->load->template('AAulE' );
               break;
         case 4:
-              $this->load->template('AAluC' );
+              $this->load->template('AAulC' );
               break;
         }
       }
