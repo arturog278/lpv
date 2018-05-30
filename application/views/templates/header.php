@@ -9,12 +9,9 @@
 		<link href="<?php echo asset_url('css/adminSol.css'); ?>" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url('css/adminbd.css'); ?>" rel="stylesheet" type="text/css">
 		<link href="<?php echo asset_url('css/adminRep.css'); ?>" rel="stylesheet" type="text/css">
-<<<<<<< HEAD
 		<link href="<?php echo asset_url('css/userBorrow.css'); ?>" rel="stylesheet" type="text/css">
 			<link href="<?php echo asset_url('css/userBorrowSearch.css'); ?>" rel="stylesheet" type="text/css">
-=======
 		<link href="<?php echo asset_url('css/AAluA.css'); ?>" rel="stylesheet" type="text/css">
->>>>>>> c71463a16eae32ee6011f17243db58df390425da
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>
