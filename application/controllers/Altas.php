@@ -24,7 +24,7 @@ class Altas extends CI_Controller {
       echo '</script>';
     }
   }
-  
+
   public function administradores()
   {
     $this->load->model('Admin_model');
@@ -52,8 +52,20 @@ class Altas extends CI_Controller {
     $numero = $this ->input->post('numero');
     $edificio = $this->input->post('edificio');
     $data = array('aulaID' => $aulaID, 'numero' => $numero,'edificio' => $edificio);
-    $this->Aulas_model->insert($data);
-  }
+    $res = $this->Aulas_model->insert($data);
+    if($res!=-1){
+      echo '<script type="text/javascript">';
+      echo 'alert("Aula agregada correctamente");';
+      echo 'window.location.href = "'.site_url('AdminBD/aulas/1').'";';
+      echo '</script>';
+    }else{
+      echo '<script type="text/javascript">';
+      echo 'alert("Ya existe un aula registrada con el numero de aula: '.$aulaID.'");';
+      echo 'window.location.href = "'.site_url('AdminBD/aulas/1').'";';
+      echo '</script>';
+    }
+}
+
 public function clases(){
   $this->load->model('clases_model');
   $claseID = $this ->input->post('claseID');
@@ -88,7 +100,18 @@ public function horarios(){
     $fechaAdquisicion= $this ->input->post('fechaAdquisicion');
     $modelo = $this ->input->post('modelo');
     $data = array('nombre' => $nombre, 'descripcion' => $descripcion,'fechaAdquisicion' => $fechaAdquisicion,'modelo' => $modelo);
-    $this->Materiales_model->insert($data);
+    $res = $this->Materiales_model->insert($data);
+    if($res!=-1){
+      echo '<script type="text/javascript">';
+      echo 'alert("Material agregado correctamente");';
+      echo 'window.location.href = "'.site_url('AdminBD/materiales/1').'";';
+      echo '</script>';
+    }else{
+      echo '<script type="text/javascript">';
+      echo 'alert("Error al agregar el material");';
+      echo 'window.location.href = "'.site_url('AdminBD/materiales/1').'";';
+      echo '</script>';
+    }
   }
   public function materias(){
     $this->load->model('Materias_model');
@@ -114,8 +137,20 @@ public function horarios(){
     $apellidop = $this->input->post('apellidop');
     $apellidom = $this->input->post('apellidom');
     $data = array('profesorID' => $profesorID, 'pass' => $pass,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom);
-    $this->Profesores_model->insert($data);
+    $res = $this->Profesores_model->insert($data);
+    if($res!=-1){
+      echo '<script type="text/javascript">';
+      echo 'alert("Profesor agregado correctamente");';
+      echo 'window.location.href = "'.site_url('AdminBD/profesores/1').'";';
+      echo '</script>';
+    }else{
+      echo '<script type="text/javascript">';
+      echo 'alert("Error al agregar el profesor");';
+      echo 'window.location.href = "'.site_url('AdminBD/profesores/1').'";';
+      echo '</script>';
   }
+}
+
   public function registroalumnos(){
     $this->load->model('Registroalumnos_model');
     $alumnoID = $this ->input->post('alumnoID');

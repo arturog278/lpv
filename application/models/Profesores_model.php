@@ -7,16 +7,18 @@ class Profesores_model extends CI_Model {
         parent::__construct();
     }
     public function insert($var){
-      $this->db->insert('Profesores',$var);
+      $this->db->insert('profesores',$var);
+      $res = $this->db->affected_rows();
+      return $res;
     }
 
     public function delete($var){
-      $this->db->delete('Profesores', array('profesoresID' => $var));
+      $this->db->delete('profesores', array('profesoresID' => $var));
     }
 
     public function update($cuenta, $var){
       $this->db->where('materialId',$profesoresID);
-      $this->db->update('Materiales',$var);
+      $this->db->update('profesores',$var);
     }
 
     public function get_credenciales($user,$pass){

@@ -9,6 +9,8 @@ class Aulas_model extends CI_Model {
 
     public function insert($var){
       $this->db->insert('aulas',$var);
+      $rows = $this->db->affected_rows();
+      return $rows;
     }
 
     public function delete($var){

@@ -9,9 +9,7 @@ class Alumno_model extends CI_Model {
 
     public function insert($var){
       $this->db->insert('alumnos',$var);
-      //$error = $this->db->error_message();
       $rows = $this->db->affected_rows();
-    //  $res = array('error' => $error,'rows' => $rows );
       return $rows;
     }
 

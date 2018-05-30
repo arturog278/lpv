@@ -21,10 +21,6 @@
         </div>
       </div>
       <div class="form-group">
-        <input id="materialID" name="materialID" type="number" class="form-control" required>
-        <label for="materialID">Número único de material</label>
-      </div>
-      <div class="form-group">
         <input id="nombre" name="nombre" type="text" class="form-control"  required>
         <label for="nombre">Nombre</label>
       </div>

@@ -9,16 +9,18 @@ class Materiales_model extends CI_Model {
 
 
     public function insert($var){
-      $this->db->insert('Materiales',$var);
+      $this->db->insert('materiales',$var);
+      $res = $this->db->affected_rows();
+      return $res;
     }
 
     public function delete($var){
-      $this->db->delete('Materiales', array('materialID' => $var));
+      $this->db->delete('materiales', array('materialID' => $var));
     }
 
     public function update($materialID, $var){
       $this->db->where('materialID',$materialID);
-      $this->db->update('Materiales',$var);
+      $this->db->update('materiales',$var);
     }
 
     public function getall($materialID,$descripcion,$nombre,$fechaAdquisicion,$modelo){
