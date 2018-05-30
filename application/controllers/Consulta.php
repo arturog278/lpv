@@ -18,33 +18,58 @@ class Consulta extends CI_Controller {
   public function administradores()
   {
     $this->load->model('Admin_model');
-    $data->Admin_model->ggetall($adminID,$nombre,$apellidop,$apellidom,$user,$pass);
-    return $data;
+    $cuenta = $this->input->post('adminID');
+    $nombre = $this->input->post('nombre');
+    $apellidop = $this->input->post('apellidoP');
+    $apellidom = $this->input->post('apellidoM');
+    $divisionID = $this->input->post('user');
+    $data['admin'] = $this->Admin_model->getall($cuenta,$nombre,$apellidop,$apellidom,$user);
+    $this->load->template('AAdmC',$data);
   }
   public function anotaciones(){
     $this->load->model('Anotaciones_model');
-    $data->Anotaciones_model->getall($anotacionID,$prestamoID,$descripcion,$resuelto);
-    return $data;
+    $anotacionID = $this->input->post('anotacionID');
+    $prestamoID = $this->input->post('prestamoID');
+    $descripcion = $this->input->post('descripcion');
+    $resuelto = $this->input->post('resuelto');
+    $data['anotaciones'] = $this->Anotaciones_model->getall($anotacionID,$prestamoID,$descripcion,$resuelto);
+    $this->load->template('AAnoC',$data);
   }
   public function aulas(){
     $this->load->model('Aulas_model');
-    $data->Aulas_model->getall($aulaID,$numero,$edificio);
-    return $data;
+    $aulaID = $this->input->post('aulaID');
+    $numero = $this->input->post('numero');
+    $edificio = $this->input->post('edificio');
+    $data['aulas'] = $this->Aulas_model->getall($aulaID,$numero,$edificio);
+    $this->load->template('AAulC',$data);
   }
   public function divisiones(){
     $this->load->model('Divisiones_model');
-    $data->Divisiones_model->getall($divisionID,$sigla,$nombre);
-    return $data;
+    $divisionID = $this->input->post('divisionID');
+    $sigla = $this->input->post('sigla');
+    $nombre = $this->input->post('nombre');
+    $data['divisiones'] = $this->Divisiones_model->getall($divisionID,$sigla,$nombre);
+    $this->load->template('ADivC',$data);
   }
   public function materiales()
   {
     $this->load->model('Materiales_model');
-    $data->Materiales_model->getall($materialID,$descripcion,$nombre,$fechaAdquisicion,$modelo);
-    return $data;
+    $materialID = $this->input->post('materialID');
+    $nombre = $this->input->post('nombre');
+    $descripcion = $this->input->post('descripcion');
+    $fechaAdquisicion = $this->input->post('fechaAdquisicion');
+    $modelo = $this->input->post('modelo');
+    $data['materiales'] = $this->Materiales_model->getall($materialID,$descripcion,$nombre,$fechaAdquisicion,$modelo);
+    $this->load->template('aMatC',$data);
   }
   public function profesores(){
     $this->load->model('Profesores_model');
-    $data->Profesores_model->getall($profesorID,$pass,$nombre,$apellidom,$apellidop);
-    return $data;
+    $profesorID = $this->input->post('profesorID');
+    $nombre = $this->input->post('nombre');
+    $pass = $this->input->post('pass');
+    $apellidom = $this->input->post('apellidoM');
+    $apellidop = $this->input->post('apellidoP');
+    $data['profesores'] = $this->Profesores_model->getall($profesorID,$pass,$nombre,$apellidom,$apellidop);
+    $this->load->template('aProC',$data);
   }
 }

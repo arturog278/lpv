@@ -24,9 +24,9 @@ class Admin_model extends CI_Model {
       return $data[0];
     }
 
-    public function getall($adminID,$nombre,$apellidop,$apellidom,$user,$pass)
+    public function getall($adminID,$nombre,$apellidop,$apellidom,$user)
     {
-      $array = array('adminID' => $adminID,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom,'user' => $user,'pass' => $pass);
+      $array = array('adminID' => $adminID,'nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom,'user' => $user);
       $this->db->select('*');
       $this->db->from('admin');
     //  $this->db->join('registroalumnos', 'cuenta = alumnoID');
