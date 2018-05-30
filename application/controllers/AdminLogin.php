@@ -8,6 +8,7 @@ class AdminLogin extends CI_Controller {
         $this->load->template('AdminLogin', $data);
         $this->load->model('Admin_model');
     }
+    
     public function LogIn()
     {
       $this->load->model('Admin_model');

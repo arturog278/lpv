@@ -8,22 +8,22 @@ class Alumno_model extends CI_Model {
     }
 
     public function insert($var){
-      $this->db->insert('alumno',$var);
+      $this->db->insert('alumnos',$var);
     }
 
     public function delete($var){
-      $this->db->delete('alumno', array('cuenta' => $var));
+      $this->db->delete('alumnos', array('cuenta' => $var));
     }
 
     public function update($cuenta, $var){
       $this->db->where('cuenta',$cuenta);
-      $this->db->update('alumno',$var);
+      $this->db->update('alumnos',$var);
     }
 
     public function get_credenciales($cuenta){
       $this->db->select('nombre');
       $this->db->where('cuenta',$user);
-      $res = $this->db->get('admin');
+      $res = $this->db->get('alumnos');
       $data = $res->result_array();
       return $data[0];
     }
@@ -42,12 +42,14 @@ class Alumno_model extends CI_Model {
       $this->db->where('nombre',$nombre);
       $this->db->where('apellidop',$apellidop);
       $this->db->where('apellidom',$apellidom);
+      $res = $this->db->get('alumnos');
       $data = $res->result_array();
       return $data;
     }
     public function getbyCuenta($cuenta)
     {
       $this->db->where('cuenta',$cuenta);
+      $res = $this->db->get('alumnos');
       $data = $res->result_array();
       return $data;
     }
