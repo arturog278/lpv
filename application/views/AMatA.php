@@ -4,7 +4,7 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <div id="contenidoreg">
-      <a href="http://localhost:8080/lpv/AdminDB">
+      <a href="<?php echo site_url('AdminBD'); ?>">
         <button type="button" class="btn btn-warning">Regresar</button>
       </a>
     </div>
@@ -12,7 +12,7 @@
     <form role="form" class="col-md-9 go-right">
       <div id="noApply" class="row">
         <div class="col-sm-10">
-          <h2>Alta de Alumnos</h2>
+          <h2>Alta de Materiales</h2>
           <p>Ingresa los datos en los espacios siguientes</p>
         </div>
         <div class="col-sm-2">

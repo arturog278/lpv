@@ -9,14 +9,14 @@
       </a>
     </div>
   <div class="row">
-    <form role="form" class="col-md-9 go-right">
+    <form role="form" class="col-md-4 go-right">
       <div id="noApply" class="row">
-        <div class="col-sm-10">
-          <h2>Alta de Alumnos</h2>
+        <div id="noApply" class="col-sm-8">
+          <h2>Busqueda de Alumnos</h2>
           <p>Ingresa los datos en los espacios siguientes</p>
         </div>
-        <div class="col-sm-2">
-          <br/><br/><button id="btnregistrar" type="button" class="btn btn-success">Registrar</button>
+        <div class="col-sm-4">
+          <br/><br/><button id="btnbuscar" type="button" class="btn btn-success">Busqueda</button>
         </div>
       </div>
       <div class="form-group">
@@ -40,5 +40,49 @@
         <label for="divisionID">División</label>
       </div>
     </form>
+    <div class="form-group col-md-7">
+      <br/><br/>
+      <label for="resultadosAlu">Resultados:</label>
+      <table class="table table-condensed table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Numero de cuenta</th>
+            <th>Nombre(s)</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Division</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1113156</td>
+            <td>Valentín</td>
+            <td>Medina</td>
+            <td>Nieto</td>
+            <td>ICO</td>
+            <td>Editar</td>
+            <td>Borrar</td>
+          </tr>
+          <tr>
+            <td>1420836</td>
+            <td>Sebastian</td>
+            <td>García</td>
+            <td>Vargas</td>
+            <td>ICO</td>
+            <td>Editar</td>
+            <td>Borrar</td>
+          </tr>
+          <tr>
+            <td>1110861</td>
+            <td>Miguel Angel</td>
+            <td>Tapia</td>
+            <td>Ayala</td>
+            <td>ICO</td>
+            <td>Editar</td>
+            <td>Borrar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
