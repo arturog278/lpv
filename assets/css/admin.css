@@ -82,3 +82,8 @@ html, body, .container, #contenido, #banner, #footer {
 	right: 10%;
 	top: 25%;
 }
+#btnbuscar1 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
