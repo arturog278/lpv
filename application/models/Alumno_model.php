@@ -33,9 +33,9 @@ class Alumno_model extends CI_Model {
 
     public function getall($cuenta,$nombre,$apellidop,$apellidom,$divisionID)
     {
-      $array = array('cuenta' => $cuenta,'alumnos.nombre' => $nombre,'appelidop' => $apellidop,'apellidom' => $apellidom,'alumnos.divisionID' => $divisionID);
+      $array = array('cuenta' => $cuenta,'alumnos.nombre' => $nombre,'appelidop' => $apellidop,'apellidom' => $apellidom,'divisiones.nombre' => $divisionID);
       $this->db->select('alumnos.nombre')
-      ->select('sigla')
+      ->select('divisiones.nombre division')
       ->select('appelidop')
       ->select('cuenta')
       ->select('apellidom');

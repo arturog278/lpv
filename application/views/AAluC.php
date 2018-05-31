@@ -64,7 +64,7 @@
               <td><?php echo $alumno->nombre;?></td>
               <td><?php echo $alumno->appelidop;?></td>
               <td><?php echo $alumno->apellidom?></td>
-              <td><?php echo $alumno->sigla;?></td>
+              <td><?php echo $alumno->division;?></td>
               <td>Editar</td>
               <td>Borrar</td>
             </tr>
