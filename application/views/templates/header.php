@@ -14,7 +14,7 @@
 	<body>
 		<div class="container">
 			<div id="banner">
-				<a href="http://localhost:8080/lpv">
+				<a href="AdminMenu">
 					<img id="bannerimg" src="<?php echo asset_url('/images/bannerFI.png'); ?>" >
 				</a>
 			</div>

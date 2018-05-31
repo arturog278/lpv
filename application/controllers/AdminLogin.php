@@ -8,7 +8,7 @@ class AdminLogin extends CI_Controller {
         $this->load->template('AdminLogin', $data);
         $this->load->model('Admin_model');
     }
-    
+
     public function LogIn()
     {
       $this->load->model('Admin_model');
@@ -16,13 +16,15 @@ class AdminLogin extends CI_Controller {
       $pass = $this->input->post('inputPassword');
       //$data = array('user' => $user,'pass' => $pass);
       $res = $this->Admin_model->get_credenciales($user,$pass);
-      $data = array('res' => $res);
-      if($res!=0){
-        $this->load->template('AdminMenu',$data);
+
+      if($res['lvl']!=0){
+        $this->session->set_userdata('logged_in',$res);
+        $this->load->template('AdminMenu');
         redirect(base_url() . 'AdminMenu');
       }else{
-        $this->load->template('AdminLogin',$data);
+        $this->load->template('AdminLogin');
         redirect(base_url() . 'AdminLogin');
       }
     }
+
 }

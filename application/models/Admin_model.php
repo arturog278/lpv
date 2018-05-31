@@ -16,7 +16,7 @@ class Admin_model extends CI_Model {
     }
 
     public function get_credenciales($user,$pass){
-      $this->db->select('adminID');
+      $this->db->select('*');
       $this->db->where('usuario',$user);
       $this->db->where('pass',$pass);
       $res = $this->db->get('admin');
