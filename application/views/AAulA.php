@@ -5,10 +5,10 @@
 <div id="contenido">
   <img id="contenidofilinkimg" src="<?php echo asset_url('images/cabecera.png'); ?>">
   <div id="contenidoreg">
-      <a href="<?php echo site_url('AdminBD'); ?>">
-        <button type="button" class="btn btn-warning">Regresar</button>
-      </a>
-    </div>
+    <a href="<?php echo site_url('AdminBD'); ?>">
+      <button type="button" class="btn btn-warning">Regresar</button>
+    </a>
+  </div>
   <div class="row">
     <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Altas/aulas')?>" method="post">
       <div id="noApply" class="row">
