@@ -33,13 +33,17 @@ class Alumno_model extends CI_Model {
 
     public function getall($cuenta,$nombre,$apellidop,$apellidom,$divisionID)
     {
-      $array = array('cuenta' => $cuenta,'nombre' => $nombre,'appelidop' => $apellidop,'apellidom' => $apellidom,'divisionID' => $divisionID);
-      $this->db->select('*');
+      $array = array('cuenta' => $cuenta,'alumnos.nombre' => $nombre,'appelidop' => $apellidop,'apellidom' => $apellidom,'alumnos.divisionID' => $divisionID);
+      $this->db->select('alumnos.nombre')
+      ->select('sigla')
+      ->select('appelidop')
+      ->select('cuenta')
+      ->select('apellidom');
       $this->db->from('alumnos');
-    //  $this->db->join('registroalumnos', 'cuenta = alumnoID');
+      $this->db->join('divisiones', 'alumnos.divisionID = divisiones.divisionID');
       $this->db->like($array);
       $query = $this->db->get();
-      $data = $query->result_array();
+      $data = $query->result();
       return $data;
     }
 }
