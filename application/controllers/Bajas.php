@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Bajas extends CI_Controller {
+class Bajas extends Auth_Controller {
 
   public function admin($cuenta){
     $this->load->model('Admin_model');

@@ -14,7 +14,7 @@
 	<body>
 		<div class="container">
 			<div id="banner">
-				<a href="AdminMenu">
+				<a href="<?php echo site_url().'AdminMenu'?>">
 					<img id="bannerimg" src="<?php echo asset_url('/images/bannerFI.png'); ?>" >
 				</a>
 			</div>

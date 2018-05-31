@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Consulta extends CI_Controller {
+class Consulta extends Auth_Controller {
 
   public function alumnos()
   {

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Altas extends CI_Controller {
+class Altas extends Auth_Controller {
 
   public function alumnos()
   {

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class AdminBD extends CI_Controller {
+class AdminBD extends Auth_Controller {
 
     public function index()
     {
