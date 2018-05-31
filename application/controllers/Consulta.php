@@ -12,7 +12,6 @@ class Consulta extends Auth_Controller {
     $divisionID = $this->input->post('divisionID');
     $data['alumnos'] = $this->Alumno_model->getall($cuenta,$nombre,$apellidop,$apellidom,$divisionID);
     $this->load->template('AAluC',$data);
-  //  redirect(base_url().'AdminBD/Alumnos/4');
   }
 
   public function administradores()
