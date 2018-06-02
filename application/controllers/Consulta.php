@@ -59,16 +59,16 @@ class Consulta extends Auth_Controller {
     $fechaAdquisicion = $this->input->post('fechaAdquisicion');
     $modelo = $this->input->post('modelo');
     $data['materiales'] = $this->Materiales_model->getall($materialID,$descripcion,$nombre,$fechaAdquisicion,$modelo);
-    $this->load->template('aMatC',$data);
+    $this->load->template('AMatC',$data);
   }
   public function profesores(){
     $this->load->model('Profesores_model');
     $profesorID = $this->input->post('profesorID');
     $nombre = $this->input->post('nombre');
     $pass = $this->input->post('pass');
-    $apellidom = $this->input->post('apellidoM');
-    $apellidop = $this->input->post('apellidoP');
+    $apellidom = $this->input->post('apellidom');
+    $apellidop = $this->input->post('apellidoo');
     $data['profesores'] = $this->Profesores_model->getall($profesorID,$pass,$nombre,$apellidom,$apellidop);
-    $this->load->template('aProC',$data);
+    $this->load->template('AProC',$data);
   }
 }

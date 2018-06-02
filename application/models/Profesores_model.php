@@ -35,7 +35,7 @@ class Profesores_model extends CI_Model {
       $this->db->select('*');
       $this->db->like($array);
       $res = $this->db->get('profesores');
-      $data = $res->result_array();
+      $data = $res->result();
       return $data;
     }
 

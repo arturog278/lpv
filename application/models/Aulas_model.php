@@ -25,7 +25,7 @@ class Aulas_model extends CI_Model {
     //  $this->db->join('registroalumnos', 'cuenta = alumnoID');
       $this->db->like($array);
       $query = $this->db->get();
-      $data = $query->result_array();
+      $data = $query->result();
       return $data;
     }
 
