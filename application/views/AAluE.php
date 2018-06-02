@@ -10,34 +10,34 @@
       </a>
     </div>
   <div class="row">
-    <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Editar/Alumnos')?>" method="post">
+    <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Editar/Alumnos/'.$alumnos[0]->cuenta.'')?>" method="post">
       <div id="noApply" class="row">
         <div class="col-sm-10">
           <h2>Modificación de Alumnos</h2>
           <p>Ingresa los datos en los espacios siguientes</p>
         </div>
         <div class="col-sm-2">
-          <br/><br/><button id="btnregistrar" type="submit" class="btn btn-success">Registrar</button>
+          <br/><br/><button id="btnregistrar" type="submit" class="btn btn-success">Actualizar</button>
         </div>
       </div>
       <div class="form-group">
-        <?php print_r($alumnos); echo '<input id="alumnoID" name="alumnoID" value="'.$alumnos->cuenta.'" type="number" class="form-control" disabled>';?>
-        <label for="alumnoID">Numero de cuenta</label>
+        <?php echo '<input id="cuenta" name="cuenta" value="'.$alumnos[0]->cuenta.'" type="number" class="form-control" disabled>';?>
+        <label for="cuenta">Numero de cuenta</label>
       </div>
       <div class="form-group">
-        <input id="apellidoP" name="apellidoP" type="text" class="form-control"  required>
+        <input id="apellidoP" name="apellidoP" type="text" class="form-control" >
         <label for="apellidoP">Apellido Paterno</label>
       </div>
       <div class="form-group">
-        <input id="apellidoM" name="apellidoM" type="text" class="form-control" required >
+        <input id="apellidoM" name="apellidoM" type="text" class="form-control" >
         <label for="apellidoM">Apellido Materno</label>
       </div>
       <div class="form-group">
-        <input id="nombre" name="nombre" type="text" class="form-control" required>
+        <input id="nombre" name="nombre" type="text" class="form-control" >
         <label for="nombre">Nombre(s)</label>
       </div>
       <div class="form-group">
-        <input id="divisionID" name="divisionID" type="text" class="form-control"  required>
+        <input id="divisionID" name="divisionID" type="text" class="form-control" >
         <label for="divisionID">División</label>
       </div>
     </form>

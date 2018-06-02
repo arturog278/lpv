@@ -28,6 +28,8 @@ class Alumno_model extends CI_Model {
     public function update($cuenta, $var){
       $this->db->where('cuenta',$cuenta);
       $this->db->update('alumnos',$var);
+      $rows = $this->db->affected_rows();
+      return $rows;
     }
 
     public function get_credenciales($cuenta){
