@@ -79,22 +79,23 @@ class Editar extends Auth_Controller {
   public function Materiales($cuenta)
   {
     $this->load->model('Materiales_model');
+    $materialID = $this->input->post('materialID');
     $nombre = $this->input->post('nombre');
     $descripcion = $this->input->post('descripcion');
     $fechaAdquisicion = $this->input->post('fechaAdquisicion');
     $modelo = $this->input->post('modelo');
-    $data = array('cuenta' => $cuenta);
+    $data = array('materialID' => $materialID);
     if ($nombre!='') {$data['nombre'] = $nombre;}
     if ($descripcion!=''){$data['descripcion'] = $descripcion;}
     if ($fechaAdquisicion!=''){$data['fechaAdquisicion'] = $fechaAdquisicion;}
     if ($modelo!=''){$data['modelo'] = $modelo;}
-    $rows = $this->Materiales_model->update($cuenta, $data);
+    $rows = $this->Materiales_model->update($materialID, $data);
     if($rows!=1){
-      echo "<script>alert('No se pudo modificar alumno')</script>";
+      echo "<script>alert('No se pudo modificar material')</script>";
     } else{
-      echo "<script>alert('Alumno modificado correctamente')</script>";
+      echo "<script>alert('Material modificado correctamente')</script>";
     }
-    echo '<script type="text/javascript"> window.location.href = "'.site_url('Consulta/Profesores').'" </script>;';
+    echo '<script type="text/javascript"> window.location.href = "'.site_url('Consulta/Materiales').'" </script>;';
   }
   public function Material($cuenta){
     $data['title'] = "Your Application Title"; // can be change according to views

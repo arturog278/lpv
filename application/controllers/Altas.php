@@ -95,11 +95,12 @@ public function horarios(){
   public function materiales()
   {
     $this->load->model('Materiales_model');
+    $materialID = $this ->input->post('materialID');
     $nombre = $this ->input->post('nombre');
     $descripcion = $this ->input->post('descripcion');
     $fechaAdquisicion= $this ->input->post('fechaAdquisicion');
     $modelo = $this ->input->post('modelo');
-    $data = array('nombre' => $nombre, 'descripcion' => $descripcion,'fechaAdquisicion' => $fechaAdquisicion,'modelo' => $modelo);
+    $data = array('materialID' => $materialID, 'nombre' => $nombre, 'descripcion' => $descripcion,'fechaAdquisicion' => $fechaAdquisicion,'modelo' => $modelo);
     $res = $this->Materiales_model->insert($data);
     if($res!=-1){
       echo '<script type="text/javascript">';

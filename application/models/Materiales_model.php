@@ -16,11 +16,13 @@ class Materiales_model extends CI_Model {
 
     public function delete($var){
       $this->db->delete('materiales', array('materialID' => $var));
+      return $this->db->affected_rows();
     }
 
     public function update($materialID, $var){
       $this->db->where('materialID',$materialID);
       $this->db->update('materiales',$var);
+      return $this->db->affected_rows();
     }
 
     public function getall($materialID,$descripcion,$nombre,$fechaAdquisicion,$modelo){
