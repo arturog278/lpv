@@ -10,10 +10,10 @@
       </a>
     </div>
   <div class="row">
-    <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Altas/materiales')?>" method="post">
+    <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Editar/Materiales/'.$Materiales[0]->materialID.'')?>" method="post">
       <div id="noApply" class="row">
         <div class="col-sm-10">
-          <h2>Alta de Materiales</h2>
+          <h2>Modificación de Materiales</h2>
           <p>Ingresa los datos en los espacios siguientes</p>
         </div>
         <div class="col-sm-2">
@@ -21,22 +21,22 @@
         </div>
       </div>
       <div class="form-group">
-        <input id="materialID" name="materialID" type="number" class="form-control"  required>
+        <?php echo '<input id="materialID" name="materialID" value="'.$Materiales[0]->materialID.'" type="number" class="form-control" disabled>';?>
         <label for="materialID">Numero de Identificación</label>
       </div>
       <div class="form-group">
-        <input id="nombre" name="nombre" type="text" class="form-control"  required>
+        <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre">
         <label for="nombre">Nombre</label>
       </div>
       <div class="form-group">
-        <textarea id="descripcion" name="descripcion" type="text" class="form-control" rows="2" id="comment" required></textarea>
+        <textarea id="descripcion" name="descripcion" type="text" class="form-control" rows="2" id="comment" placeholder="Descripcion"></textarea>
         <label for="descripcion">Descripcion</label>
       </div>
       <div class="form-group">
-        <input id="fechaAdquisicion" name="fechaAdquisicion" type="date" class="form-control" required>
+        <input id="fechaAdquisicion" name="fechaAdquisicion" type="date" class="form-control" placeholder="Fecha de adquisicion">
       </div>
       <div class="form-group">
-        <input id="modelo" name="modelo" type="text" class="form-control"  required>
+        <input id="modelo" name="modelo" type="text" class="form-control"  placeholder="Modelo">
         <label for="modelo">Modelo</label>
       </div>
     </form>
