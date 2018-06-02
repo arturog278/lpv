@@ -76,10 +76,9 @@ class Editar extends Auth_Controller {
     $data['Profesores'] = $this->Profesores_model->getall($cuenta,'','','','');
     $this->load->template('AProE', $data); // this will load the view file
   }
-  public function Materiales($cuenta)
+  public function Materiales($materialID)
   {
     $this->load->model('Materiales_model');
-    $materialID = $this->input->post('materialID');
     $nombre = $this->input->post('nombre');
     $descripcion = $this->input->post('descripcion');
     $fechaAdquisicion = $this->input->post('fechaAdquisicion');
