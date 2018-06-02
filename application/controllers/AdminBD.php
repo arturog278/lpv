@@ -28,13 +28,10 @@ class AdminBD extends Auth_Controller {
         case 1:
             $this->load->template('AAluA');
             break;
-       case 2:
-            $this->load->template('AAluB');
-            break;
-       case 3:
+        case 2:
             $this->load->template('AAluE');
             break;
-      case 4:
+        case 3:
             $this->load->model('Alumno_model');
             $data['alumnos'] = $this->Alumno_model->getall('','','','','');
             $this->load->template('AAluC',$data);

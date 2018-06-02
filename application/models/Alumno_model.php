@@ -18,6 +18,13 @@ class Alumno_model extends CI_Model {
       return $this->db->affected_rows();
     }
 
+    public function update1($data) {
+    extract($data);
+    $this->db->where('cuenta',$cuenta);
+    $this->db->update($table_name, array('title' => $title));
+    return true;
+}
+
     public function update($cuenta, $var){
       $this->db->where('cuenta',$cuenta);
       $this->db->update('alumnos',$var);

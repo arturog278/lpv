@@ -65,8 +65,8 @@
                 <td><?php echo $alumno->appelidop;?></td>
                 <td><?php echo $alumno->apellidom?></td>
                 <td><?php echo $alumno->division;?></td>
-                <td>Editar</td>
-                <td>Borrar</td>
+                <td><?php echo '<a href="'.base_url().'Editar/alumnos/'.$alumno->cuenta.'">Editar</a>'?></td>
+                <td><?php echo '<a href="'.base_url().'Bajas/alumnos/'.$alumno->cuenta.'">Borrar</a>'?></td>
               </tr>
             <?php } ?>
           </tbody>

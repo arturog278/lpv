@@ -66,12 +66,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-minus text-success"></span><a href="http://www.jquery2dotnet.com">Bajas</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-pencil text-info"></span><a href="http://www.jquery2dotnet.com">Cambios</a>
+                                        <span class="glyphicon glyphicon-pencil text-info"></span><a href="AdminBD/Alumnos/2">Cambios</a>
                                     </td>
                                 </tr>
                                 <tr>
