@@ -14,8 +14,9 @@
   <div class="row">
     <form role="form" class="col-md-6 go-right" action = <?php echo base_url().'Consulta/alumnos' ?> method='post' >
       <select name="profesor">
-        <option>1</option>
-          <option>2</option>
+        <?php foreach ($profesores as $profesor) { ?>
+            <?php echo '<option>'.$profesor->apellidop.'  '.$profesor->apellidom.'  '.$profesor->nombre.'  '.$profesor->nombreM.'</option>'; ?>
+        <?php } ?>
       </select>
     </form>
     <form role="form" class="col-md-5 go-right" action = <?php echo base_url().'UserBorrow/busqueda/4' ?> method='post' >

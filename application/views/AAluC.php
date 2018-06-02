@@ -59,16 +59,16 @@
           </thead>
           <tbody>
             <?php foreach ($alumnos as $alumno) { ?>
-            <tr>
-              <td><?php echo $alumno->cuenta;?></td>
-              <td><?php echo $alumno->nombre;?></td>
-              <td><?php echo $alumno->appelidop;?></td>
-              <td><?php echo $alumno->apellidom?></td>
-              <td><?php echo $alumno->division;?></td>
-              <td>Editar</td>
-              <td>Borrar</td>
-            </tr>
-          <?php } ?>
+              <tr>
+                <td><?php echo $alumno->cuenta;?></td>
+                <td><?php echo $alumno->nombre;?></td>
+                <td><?php echo $alumno->appelidop;?></td>
+                <td><?php echo $alumno->apellidom?></td>
+                <td><?php echo $alumno->division;?></td>
+                <td>Editar</td>
+                <td>Borrar</td>
+              </tr>
+            <?php } ?>
           </tbody>
         </table>
       </div>

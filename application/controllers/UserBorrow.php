@@ -12,7 +12,7 @@ class UserBorrow extends CI_Controller {
       switch($parametro){
         case 1:
             $this->load->model('Profesores_model');
-            $data['profesores'] = $this->Profesores_model->getforPrestamo('','','','','');
+            $data['profesores'] = $this->Profesores_model->getforPrestamo('','','','');
             $this->load->template('AAluC',$data);
             break;
       }
