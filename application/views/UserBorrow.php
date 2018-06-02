@@ -14,12 +14,12 @@
   <div class="row">
     <form role="form" class="col-md-6 go-right" action = <?php echo base_url().'Consulta/alumnos' ?> method='post' >
       <select name="profesor">
-        <?php foreach ($profesores as $profesor) { ?>
+        <?php foreach ($profesores as $profesor) {  print_r($profesor);?>
             <?php echo '<option>'.$profesor->apellidop.'  '.$profesor->apellidom.'  '.$profesor->nombre.'  '.$profesor->nombreM.'</option>'; ?>
         <?php } ?>
       </select>
     </form>
-    <form role="form" class="col-md-5 go-right" action = <?php echo base_url().'UserBorrow/busqueda/4' ?> method='post' >
+    <form role="form" class="col-md-5 go-right" action = <?php echo base_url().'UserBorrow/Prestamos/1' ?> method='post' >
       <div id="noApply" class="row">
         <div class="col-md-8">
           <h2>Busqueda de Profesores</h2>
