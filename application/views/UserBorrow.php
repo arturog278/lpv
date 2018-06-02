@@ -14,8 +14,9 @@
   <div class="row">
     <form role="form" class="col-md-6 go-right" action = <?php echo base_url().'Consulta/alumnos' ?> method='post' >
       <select name="profesor">
+        <option>Seleccione Uno</option>
         <?php foreach ($profesores as $profesor) {  print_r($profesor);?>
-            <?php echo '<option>'.$profesor->apellidop.'  '.$profesor->apellidom.'  '.$profesor->nombre.' - '.$profesor->nombreM.'</option>'; ?>
+            <?php echo '<option value="'.$profesor->profesorID.'">'.$profesor->apellidop.'  '.$profesor->apellidom.'  '.$profesor->nombre.' - '.$profesor->nombreM.'</option>'; ?>
         <?php } ?>
       </select>
     </form>

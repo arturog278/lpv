@@ -41,7 +41,7 @@ class Profesores_model extends CI_Model {
 
     public function getforPrestamo($nombre,$apellidop,$apellidom,$nombreM){
       $array = array('profesores.nombre' => $nombre,'apellidop' => $apellidop,'apellidom' => $apellidom,'materias.nombre' => $nombreM);
-      $this->db->select('profesores.nombre nombre, apellidop, apellidom, materias.nombre nombreM');
+      $this->db->select('profesores.profesorID profesorID, profesores.nombre nombre, apellidop, apellidom, materias.nombre nombreM');
       $this->db->from('profesores');
       $this->db->join('clases', 'profesores.profesorID = clases.profesorID');
       $this->db->join('materias', 'clases.materiaID = materias.materiaID');
