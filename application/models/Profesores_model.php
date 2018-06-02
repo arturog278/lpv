@@ -47,8 +47,8 @@ class Profesores_model extends CI_Model {
       $this->db->join('materias', 'clases.materiaID = materias.materiaID');
       $this->db->join('horarios', 'clases.horarioID = horarios.horarioID');
       $this->db->like($array);
-      $this->db->where('hora <', CAST(now() AS TIME)+30000);
-      $this->db->where('dia', CAST(now() AS DATE));
+      $this->db->where('hora <', date("H:i",strtotime(gmdate("H:i"))-7200));
+      $this->db->where('dia', date("Y-m-d"));
       $query = $this->db->get();
       $data = $query->result();
       return $data;
