@@ -13,21 +13,12 @@
   </div>
   <div class="row">
     <form role="form" class="col-md-6 go-right" action = <?php echo base_url().'Consulta/alumnos' ?> method='post' >
-      <div class="form-group">
-        <label for="sel1">Select list:</label>
-        <select class="form-control" id="sel1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </select>
-      </div>
-      <select>
+      <select name="profesor">
         <option>1</option>
           <option>2</option>
       </select>
     </form>
-    <form role="form" class="col-md-5 go-right" action = <?php echo base_url().'UserBorrow/' ?> method='post' >
+    <form role="form" class="col-md-5 go-right" action = <?php echo base_url().'UserBorrow/busqueda/4' ?> method='post' >
       <div id="noApply" class="row">
         <div class="col-md-8">
           <h2>Busqueda de Profesores</h2>
@@ -38,24 +29,20 @@
         </div>
       </div><p>Ingresa los datos en los espacios siguientes</p>
       <div class="form-group">
-        <input id="alumnoID" name="cuenta" type="number" class="form-control">
-        <label for="alumnoID">Numero de cuenta</label>
-      </div>
-      <div class="form-group">
-        <input id="apellidoP" name="appelidoP" type="text" class="form-control">
-        <label for="apellidoP">Apellido Paterno</label>
-      </div>
-      <div class="form-group">
-        <input id="apellidoM" name="apellidoM" type="text" class="form-control">
-        <label for="apellidoM">Apellido Materno</label>
-      </div>
-      <div class="form-group">
         <input id="nombre" name="nombre" type="text" class="form-control">
-        <label for="nombre">Nombre(s)</label>
+        <label for="nombre">Nombre del profesor</label>
       </div>
       <div class="form-group">
-        <input id="divisionID" name="divisionID" type="text" class="form-control">
-        <label for="divisionID">División</label>
+        <input id="apellidop" name="apellidop" type="text" class="form-control">
+        <label for="apellidop">Apellido Paterno</label>
+      </div>
+      <div class="form-group">
+        <input id="apellidom" name="apellidom" type="text" class="form-control">
+        <label for="apellidom">Apellido Materno</label>
+      </div>
+      <div class="form-group">
+        <input id="nombreM" name="nombreM" type="text" class="form-control">
+        <label for="nombreM">Materia</label>
       </div>
     </form>
   </div>
