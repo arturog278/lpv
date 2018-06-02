@@ -96,7 +96,7 @@ class Editar extends Auth_Controller {
     }
     echo '<script type="text/javascript"> window.location.href = "'.site_url('Consulta/Profesores').'" </script>;';
   }
-  public function Materiales($cuenta){
+  public function Material($cuenta){
     $data['title'] = "Your Application Title"; // can be change according to views
     $this->load->model('Materiales_model');
     $data['Materiales'] = $this->Materiales_model->getall($cuenta,'','','','');
