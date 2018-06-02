@@ -13,12 +13,16 @@ class Profesores_model extends CI_Model {
     }
 
     public function delete($var){
-      $this->db->delete('profesores', array('profesoresID' => $var));
+      $this->db->delete('profesores', array('profesorID' => $var));
+      $rows = $this->db->affected_rows();
+      return $rows;
     }
 
     public function update($cuenta, $var){
-      $this->db->where('materialId',$profesoresID);
+      $this->db->where('profesorID',$cuenta);
       $this->db->update('profesores',$var);
+      $rows = $this->db->affected_rows();
+      return $rows;
     }
 
     public function get_credenciales($user,$pass){

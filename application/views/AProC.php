@@ -13,7 +13,7 @@
     <form role="form" class="col-md-4 go-right" action = <?php echo base_url().'Consulta/profesores' ?> method='post' >
       <div id="noApply" class="row">
         <div id="noApply" class="col-sm-8">
-          <h2>Busqueda de Aulas</h2>
+          <h2>Busqueda de Profesores</h2>
           <p>Ingresa los datos en los espacios siguientes</p>
         </div>
         <div class="col-sm-4">
@@ -59,8 +59,8 @@
                 <td><?php echo $profesor->nombre;?></td>
                 <td><?php echo $profesor->apellidop;?></td>
                 <td><?php echo $profesor->apellidom;?></td>
-                <td>Editar</td>
-                <td>Borrar</td>
+                <td><?php echo '<a href="'.base_url().'Editar/profesor/'.$profesor->profesorID.'">Editar</a>'?></td>
+                <td><?php echo '<a href="'.base_url().'Bajas/profesores/'.$profesor->profesorID.'">Borrar</a>'?></td>
               </tr>
             <?php } ?>
           </tbody>

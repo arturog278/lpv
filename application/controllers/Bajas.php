@@ -98,9 +98,9 @@ class Bajas extends Auth_Controller {
     $this->load->model('Profesores_model');
     $res = $this->Profesores_model->delete($cuenta);
     if($res!=1){
-      echo "<script>alert('No existe ningun registro con ese numero de cuenta')</script>";
+      echo "<script>alert('Error al intentar de dar de baja el profesor')</script>";
     }else{
-      echo "<script>alert('Alumno eliminado correctamente')</script>";
+      echo "<script>alert('Profesor eliminado correctamente')</script>";
     }
   }
   public function registroalumnos($cuenta){
