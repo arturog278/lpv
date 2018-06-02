@@ -24,9 +24,9 @@ class Editar extends Auth_Controller {
   }
   public function alumno($cuenta){
     $data['title'] = "Your Application Title"; // can be change according to views
-    $this->load->model('Aulas_model');
+    $this->load->model('Alumno_model');
     $data['alumnos'] = $this->Alumno_model->getall($cuenta,'','','','');
-    $this->load->template('AAulE', $data); // this will load the view file
+    $this->load->template('AAluE', $data); // this will load the view file
   }
   public function Aulas($cuenta)
   {
