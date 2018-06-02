@@ -25,19 +25,19 @@
         <label for="cuenta">Numero de cuenta</label>
       </div>
       <div class="form-group">
-        <input id="apellidoP" name="apellidoP" type="text" class="form-control" >
+        <input id="apellidoP" name="apellidoP" type="text" placeholder="Apellido Paterno"class="form-control" >
         <label for="apellidoP">Apellido Paterno</label>
       </div>
       <div class="form-group">
-        <input id="apellidoM" name="apellidoM" type="text" class="form-control" >
+        <input id="apellidoM" name="apellidoM" type="text" placeholder="Apellido Materno" class="form-control" >
         <label for="apellidoM">Apellido Materno</label>
       </div>
       <div class="form-group">
-        <input id="nombre" name="nombre" type="text" class="form-control" >
+        <input id="nombre" name="nombre" type="text" placeholder="Nombres(s)" class="form-control" >
         <label for="nombre">Nombre(s)</label>
       </div>
       <div class="form-group">
-        <input id="divisionID" name="divisionID" type="text" class="form-control" >
+        <input id="divisionID" name="divisionID" type="text" placeholder="División" class="form-control" >
         <label for="divisionID">División</label>
       </div>
     </form>

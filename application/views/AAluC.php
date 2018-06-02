@@ -21,23 +21,23 @@
         </div>
       </div>
       <div class="form-group">
-        <input id="alumnoID" name="cuenta" type="number" class="form-control">
+        <input id="alumnoID" name="cuenta" type="number" placeholder="Numero de cuenta" class="form-control">
         <label for="alumnoID">Numero de cuenta</label>
       </div>
       <div class="form-group">
-        <input id="apellidoP" name="appelidoP" type="text" class="form-control">
+        <input id="apellidoP" name="appelidoP" type="text" placeholder="Apellido Paterno" class="form-control">
         <label for="apellidoP">Apellido Paterno</label>
       </div>
       <div class="form-group">
-        <input id="apellidoM" name="apellidoM" type="text" class="form-control">
+        <input id="apellidoM" name="apellidoM" type="text" placeholder="Apellido Materno" class="form-control">
         <label for="apellidoM">Apellido Materno</label>
       </div>
       <div class="form-group">
-        <input id="nombre" name="nombre" type="text" class="form-control">
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre(s)" class="form-control">
         <label for="nombre">Nombre(s)</label>
       </div>
       <div class="form-group">
-        <input id="divisionID" name="divisionID" type="text" class="form-control">
+        <input id="divisionID" name="divisionID" type="text" placeholder="División" class="form-control">
         <label for="divisionID">División</label>
       </div>
     </form>
