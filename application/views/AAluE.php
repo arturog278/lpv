@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="form-group">
-        <?php echo '<input id="alumnoID" name="alumnoID" value="'.$cuenta.'" type="number" class="form-control" disabled>';?>
+        <?php print_r($alumnos); echo '<input id="alumnoID" name="alumnoID" value="'.$alumnos->cuenta.'" type="number" class="form-control" disabled>';?>
         <label for="alumnoID">Numero de cuenta</label>
       </div>
       <div class="form-group">

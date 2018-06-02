@@ -38,6 +38,14 @@ class Alumno_model extends CI_Model {
       return $data[0];
     }
 
+    public function get($cuenta){
+      $this->db->select('*');
+      $this->db->where('cuenta',$cuenta);
+      $res = $this->db->get('alumnos');
+      $data = $res->row_array();
+      return $data;
+    }
+
     public function getall($cuenta,$nombre,$apellidop,$apellidom,$divisionID)
     {
       $array = array('cuenta' => $cuenta,'alumnos.nombre' => $nombre,'appelidop' => $apellidop,'apellidom' => $apellidom,'divisiones.nombre' => $divisionID);

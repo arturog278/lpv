@@ -19,6 +19,9 @@ class Editar extends Auth_Controller {
     echo '<script type="text/javascript"> window.location.href = "'.site_url('Consulta/alumnos').'" </script>;';
   }
   public function alumno($cuenta){
-    
+    $data['title'] = "Your Application Title"; // can be change according to views
+    $this->load->model('Alumno_model');
+    $data['alumnos'] = $this->Alumno_model->get('');
+    $this->load->template('AAluE', $data); // this will load the view file
   }
 }
