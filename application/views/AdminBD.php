@@ -14,7 +14,7 @@
 
   <div class="panel-group" id="accordion">
     <br>
-    <div class="panel panel-default">
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Gestionar administradores</a>
@@ -47,7 +47,7 @@
                             </table>
                         </div>
       </div>
-    </div>
+    </div>-->
   </div>
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -64,11 +64,11 @@
                                         <span class="glyphicon glyphicon-plus text-primary"></span><a href="AdminBD/Alumnos/1">Altas</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!--<tr>
                                     <td>
                                         <span class="glyphicon glyphicon-pencil text-info"></span><a href="AdminBD/Alumnos/2">Cambios</a>
                                     </td>
-                                </tr>
+                                </tr>-->
                                 <tr>
                                     <td>
                                         <span class="glyphicon glyphicon-list-alt text-success"></span><a href="Consulta/alumnos">Consultas</a>
@@ -79,7 +79,7 @@
       </div>
       </div>
     </div>
-    <div class="panel panel-default">
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Gestionar anotaciones</a>
@@ -113,7 +113,7 @@
                         </div>
       </div>
       </div>
-    </div>
+    </div>-->
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -126,10 +126,10 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-plus text-primary"></span><a href="http://www.jquery2dotnet.com">Altas</a>
+                                        <span class="glyphicon glyphicon-plus text-primary"></span><a href="AdminBD/Aulas/1">Altas</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!--<tr>
                                     <td>
                                         <span class="glyphicon glyphicon-minus text-success"></span><a href="http://www.jquery2dotnet.com">Bajas</a>
                                     </td>
@@ -138,10 +138,10 @@
                                     <td>
                                         <span class="glyphicon glyphicon-pencil text-info"></span><a href="http://www.jquery2dotnet.com">Cambios</a>
                                     </td>
-                                </tr>
+                                </tr>-->
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="http://www.jquery2dotnet.com">Consultas</a>
+                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="Consulta/aulas">Consultas</a>
                                     </td>
                                 </tr>
                             </table>
@@ -149,7 +149,7 @@
       </div>
       </div>
     </div>
-    <div class="panel panel-default">
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Gestionar clases</a>
@@ -183,8 +183,8 @@
                         </div>
       </div>
       </div>
-    </div>
-    <div class="panel panel-default">
+    </div>-->
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Gestionar divisiones</a>
@@ -218,8 +218,8 @@
                         </div>
       </div>
       </div>
-    </div>
-    <div class="panel panel-default">
+    </div>-->
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Gestionar horarios</a>
@@ -253,7 +253,7 @@
                         </div>
       </div>
       </div>
-    </div>
+    </div>-->
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -269,7 +269,7 @@
                                         <span class="glyphicon glyphicon-plus text-primary"></span><a href="AdminBD/materiales/1">Altas</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!--<tr>
                                     <td>
                                         <span class="glyphicon glyphicon-minus text-success"></span><a href="http://www.jquery2dotnet.com">Bajas</a>
                                     </td>
@@ -278,10 +278,10 @@
                                     <td>
                                         <span class="glyphicon glyphicon-pencil text-info"></span><a href="http://www.jquery2dotnet.com">Cambios</a>
                                     </td>
-                                </tr>
+                                </tr>-->
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="http://www.jquery2dotnet.com">Consultas</a>
+                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="Consulta/materiales/">Consultas</a>
                                     </td>
                                 </tr>
                             </table>
@@ -289,7 +289,7 @@
       </div>
       </div>
     </div>
-    <div class="panel panel-default">
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Gestionar materias</a>
@@ -323,8 +323,8 @@
                         </div>
       </div>
       </div>
-    </div>
-    <div class="panel panel-default">
+    </div>-->
+  <!--  <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Gestionar préstamos</a>
@@ -358,7 +358,7 @@
                         </div>
       </div>
       </div>
-    </div>
+    </div>-->
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -374,7 +374,7 @@
                                         <span class="glyphicon glyphicon-plus text-primary"></span><a href="AdminBD/profesores/1">Altas</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!--<tr>
                                     <td>
                                         <span class="glyphicon glyphicon-minus text-success"></span><a href="http://www.jquery2dotnet.com">Bajas</a>
                                     </td>
@@ -383,10 +383,10 @@
                                     <td>
                                         <span class="glyphicon glyphicon-pencil text-info"></span><a href="http://www.jquery2dotnet.com">Cambios</a>
                                     </td>
-                                </tr>
+                                </tr>-->
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="http://www.jquery2dotnet.com">Consultas</a>
+                                        <span class="glyphicon glyphicon-list-alt text-success"></span><a href="Consulta/profesores">Consultas</a>
                                     </td>
                                 </tr>
                             </table>
@@ -394,7 +394,7 @@
       </div>
       </div>
     </div>
-    <div class="panel panel-default">
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Gestionar registros</a>
@@ -428,8 +428,8 @@
                         </div>
       </div>
       </div>
-    </div>
-    <div class="panel panel-default">
+    </div-->
+    <!--<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Gestionar registros activos</a>
@@ -464,7 +464,7 @@
       </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
 
 </body>
