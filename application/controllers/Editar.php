@@ -52,21 +52,21 @@ class Editar extends Auth_Controller {
   }
   public function Profesores($cuenta)
   {
-    $this->load->model('Alumno_model');
+    $this->load->model('Profesores_model');
     $nombre = $this->input->post('nombre');
     $appat = $this->input->post('apellidoP');
     $apmat = $this->input->post('apellidoM');
     $pass = $this->input->post('pass');
-    $data = array('cuenta' => $cuenta);
+    $data = array('profesorID' => $cuenta);
     if ($nombre!='') {$data['nombre'] = $nombre;}
     if ($appat!=''){$data['appelidop'] = $appat;}
     if ($apmat!=''){$data['apellidom'] = $apmat;}
     if ($pass!=''){$data['pass'] = $pass;}
     $rows = $this->Profesores_model->update($cuenta, $data);
     if($rows!=1){
-      echo "<script>alert('No se pudo modificar alumno')</script>";
+      echo "<script>alert('No se pudo modificar profesor')</script>";
     } else{
-      echo "<script>alert('Alumno modificado correctamente')</script>";
+      echo "<script>alert('Profesor modificado correctamente')</script>";
     }
     echo '<script type="text/javascript"> window.location.href = "'.site_url('Consulta/Profesores').'" </script>;';
   }
