@@ -74,6 +74,7 @@ class Bajas extends Auth_Controller {
     }else{
       echo "<script>alert('Alumno eliminado correctamente')</script>";
     }
+    echo '<script type="text/javascript"> window.location.href = "'.site_url('Consulta/materiales').'" </script>;';
   }
   public function materias($cuenta){
     $this->load->model('Materias_model');
