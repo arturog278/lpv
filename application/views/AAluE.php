@@ -10,7 +10,7 @@
       </a>
     </div>
   <div class="row">
-    <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Editar/Alumno')?>" method="post">
+    <form role="form" class="col-md-9 go-right" action="<?php echo site_url('Editar/Alumnos')?>" method="post">
       <div id="noApply" class="row">
         <div class="col-sm-10">
           <h2>Modificación de Alumnos</h2>
